@@ -13779,6 +13779,13 @@
 32009,Equipment_Coupon,Equipment Coupon,3,0,,0,,,,,,,,,,,,,{},{},{}
 
 // New Armor
+300001,Poisonous_Card,Poisonous Card,6,20,,10,,,,,0xFFFFFFFF,63,2,2,,,,,{ bonus2 bAddEle,Ele_Poison,25; },{},{}
+300002,Toxious_Card,Toxious Card,6,20,,10,,,,,0xFFFFFFFF,63,2,16,,,,,{ bonus bMaxHPrate,10; bonus bLongAtkDef,5; },{},{}
+300003,White_Porcellio_Card,White Porcellio Card,6,20,,10,,,,,0xFFFFFFFF,63,2,64,,,,,{ bonus bBaseAtk,20+getrefine(); },{},{}
+300004,Neo_Mineral_Card,Neo Mineral Card,6,20,,10,,,,,0xFFFFFFFF,63,2,4,,,,,{ bonus bDef,30+getrefine()*3; },{},{}
+300005,Abyssman_Card,Abyssman Card,6,20,,10,,,,,0xFFFFFFFF,63,2,64,,,,,{ bonus bMaxHPrate,10; bonus2 bSkillAtk,"SO_EARTHGRAVE",10; },{},{}
+300006,Jewelry_Ant_Card,Jewelry Ant Card,6,20,,10,,,,,0xFFFFFFFF,63,2,8,,,,,{ bonus3 bAutoSpell,"SO_PSYCHIC_WAVE",1,20; },{},{}
+300007,Jewgoliant_Card,Jewgoliant Card,6,20,,10,,,,,0xFFFFFFFF,63,2,16,,,,,{ bonus2 bAddRace,RC_Plant,40; bonus2 bAddRace,RC_Formless,40; bonus2 bAddEle,Ele_Fire,40; bonus2 bAddEle,Ele_Water,40; },{},{}
 450018,Noblesse_Breath_Armor,Noblesse Breath Armor,4,20,,0,,100,,1,0x00000080,56,2,16,,100,1,,{ .@r = getrefine(); bonus bMaxHPrate,5; if(.@r>=7) bonus bVariableCastrate,-10; if(.@r>=9) bonus bMaxHPrate,5; },{},{}
 450019,Noblesse_Knight_Armor,Noblesse Knight Armor,4,20,,0,,100,,1,0x00000080,56,2,16,,100,1,,{ .@r = getrefine(); bonus bBaseAtk,50; if(.@r>=7) bonus bAspdRate,3; if(.@r>=9) bonus bCritAtkRate,5; },{},{}
 450020,Noblesse_Spear_Armor,Noblesse Spear Armor,4,20,,0,,100,,1,0x00004000,56,2,16,,100,1,,{ .@r = getrefine(); bonus bBaseAtk,50; if(.@r>=7) bonus bAspdRate,3; if(.@r>=9) bonus bLongAtkRate,5; },{},{}
