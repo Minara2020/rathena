@@ -565,9 +565,9 @@ function	script	refinemain	{
 
 	if( getbattleflag( "feature.refineui" ) == 3 ){
 		mes "["+ .@npc_name$ +"]";
-		mes "I've spent a long time refining powerful weapons.";
-		mes "You are in the presence of ์ฅ์ถฐํ•๋จ [Zhang Zhuangtan]"; // TODO: find a valid translation
-		mes "Do you want to strengthen your equipment?";
+		mes "ระบบการบวกไอเท็มแบบใหม่ ด้วยระบบ UI";
+		mes "ฉันสามารถเพิ่มความสามารถอุปกรณ์ต่าง ๆ ได้ อย่าง อาวุธ ชุดเกาะ และ อื่น ๆ "; 
+		mes "คุณพร้อมที่ต้องการตีบวกหรือไหม ?";
 		close2;
 		refineui();
 		end;

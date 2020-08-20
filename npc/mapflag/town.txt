@@ -14,6 +14,7 @@
 //============================================================
 
 prontera	mapflag	town
+prontera	mapflag	nodrop
 izlude	mapflag	town
 moc_ruins	mapflag	town
 geffen	mapflag	town
