@@ -560,9 +560,20 @@ lhz_in02,282,20,7	script	Fulerr	869,{
 //= .@safe to the max safe refine in refine_db.txt as well.
 //============================================================
 function	script	refinemain	{
-	disable_items;
 	.@npc_name$ = getarg(0);
 	.@features = getarg(1);
+
+	if( getbattleflag( "feature.refineui" ) == 3 ){
+		mes "["+ .@npc_name$ +"]";
+		mes "ระบบการบวกไอเท็มแบบใหม่ ด้วยระบบ UI";
+		mes "ฉันสามารถเพิ่มความสามารถอุปกรณ์ต่าง ๆ ได้ อย่าง อาวุธ ชุดเกาะ และ อื่น ๆ "; 
+		mes "คุณพร้อมที่ต้องการตีบวกหรือไหม ?";
+		close2;
+		refineui();
+		end;
+	}
+
+	disable_items;
 	mes "["+ .@npc_name$ +"]";
 	mes "I'm the Armsmith.";
 	mes "I can refine all kinds of weapons, armor and equipment, so let me";

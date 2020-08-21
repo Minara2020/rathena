@@ -755,7 +755,7 @@
 	export_constant2("bLongHPGainValue",SP_LONG_HP_GAIN_VALUE);
 	export_constant2("bMagicSubSize",SP_MAGIC_SUBSIZE);
 	export_constant2("bCritDefRate",SP_CRIT_DEF_RATE);
-
+	export_constant2("bMagicSubDefEle", SP_MAGIC_SUBDEF_ELE);
 
 	/* equip indices */
 	export_constant(EQI_COMPOUND_ON);
@@ -5187,8 +5187,9 @@
 	export_constant(REFINE_COST_MAX);
 
 	/* refine information types */
-	script_set_constant("REFINE_MATERIAL_ID", 0, false, false);
-	script_set_constant("REFINE_ZENY_COST", 1, false, false);
+	export_constant(REFINE_MATERIAL_ID);
+	export_constant(REFINE_ZENY_COST);
+	export_constant(REFINE_BREAKABLE);
 
 	/* NPC view ids */
 	// Special macro to strip the prefix 'JT_'
@@ -7832,6 +7833,7 @@
 	export_constant(UNT_GROUNDDRIFT_POISON);
 	export_constant(UNT_GROUNDDRIFT_WATER);
 	export_constant(UNT_GROUNDDRIFT_FIRE);
+	export_constant(UNT_EARTHQUAKE);
 	export_constant(UNT_EVILLAND);
 	export_constant(UNT_EPICLESIS);
 	export_constant(UNT_EARTHSTRAIN);

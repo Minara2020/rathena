@@ -2846,9 +2846,19 @@ Valid information types are:
 
 REFINE_ZENY_COST       - Zeny
 REFINE_MATERIAL_ID     - Material Item ID
+REFINE_BREAKABLE       - If the equipment will be broken by using this material
+                         on a failed atempt
 
 This function will return -1 on failure. The function fails if the cost type
-is invalid or if there is no item in the equipment slot. 
+is invalid or if there is no item in the equipment slot.
+
+---------------------------------------
+
+*refineui({<char id>})
+
+Opens the refine UI for the attached player or the given character id.
+
+This feature requires 2016-10-12aRagexeRE or newer.
 
 ---------------------------------------
 
@@ -2861,8 +2871,7 @@ number.
 This is the only function around where a parameter may be either a string or a
 number! If it's a number, it means that only the items with that item ID number
 will be counted. If it is a string, it is assumed to mean the 'english name'
-field from the item database. If you give it an empty string, or something that
-isn't found from the item database, it will count items number '512' (apples).
+field from the item database.
 
 ---------------------------------------
 
@@ -5808,9 +5817,9 @@ Increase AGI Lv 5, and display appropriate effects.
 *npcskilleffect <skill id>,<number>,<x>,<y>;
 *npcskilleffect "<skill name>",<number>,<x>,<y>;
 
-This command behaves identically to 'skilleffect', however, the effect will not
-be centered on the invoking character's sprite, nor on the NPC sprite, if any,
-but will be centered at map coordinates given on the same map as the invoking
+This command behaves identically to 'skilleffect', however, ground type skill
+effects will be centered at the map coordinates given on the same map as the
+attached character and all other skill types will be centered on the attached
 character.
 
 ---------------------------------------
@@ -8548,6 +8557,8 @@ Valid types are:
 		if = 10000, then this item is sold in NPC shops only
 	4 - sex; 5 - equip; 6 - weight; 7 - atk; 8 - def; 9 - range;
 	10 - slot; 11 - look; 12 - elv; 13 - wlv; 14 - view id
+	15 - eLVMax
+	16 - matk if RENEWAL is defined
 
 Example:
 	setiteminfo 7049,6,9990; // Stone now weighs 999.0

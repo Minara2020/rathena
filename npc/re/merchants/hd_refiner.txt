@@ -141,7 +141,7 @@
 	mes "I am sure a person like you would never blame me for a decrease in refine level by 1. Hmm.";
 	close;
 }
-prt_in,59,54,3	duplicate(MightyHammer)	Mighty Hammer#prt	826
+//prt_in,59,54,3	duplicate(MightyHammer)	Mighty Hammer#prt	826
 morocc_in,65,30,3	duplicate(MightyHammer)	Mighty Hammer#morocc	826
 payon,148,176,3	duplicate(MightyHammer)	Mighty Hammer#pay	826
 alberta_in,16,56,3	duplicate(MightyHammer)	Mighty Hammer#alb	826
@@ -309,7 +309,7 @@ lhz_in02,280,19,3	duplicate(MightyHammer)	Mighty Hammer#lhz	826
 	mes "I'll do better next time! Don't worry!";
 	close;
 }
-prt_in,57,54,3	duplicate(Basta)	Basta#prt	826
+//prt_in,57,54,3	duplicate(Basta)	Basta#prt	826
 morocc_in,68,30,3	duplicate(Basta)	Basta#morocc	826
 payon,148,174,3	duplicate(Basta)	Basta#payon	826
 alberta_in,18,56,3	duplicate(Basta)	Basta#alberta	826
