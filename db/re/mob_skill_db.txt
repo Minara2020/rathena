@@ -11898,3 +11898,4 @@
 3505,DR_BIG_EGGRING@NPC_SUMMONSLAVE,attack,196,4,10000,2000,10000,no,self,slavele,3,3508,,,,,,
 3505,DR_BIG_EGGRING@NPC_SUMMONSLAVE,idle,196,4,10000,2000,10000,no,self,slavele,3,3508,,,,,,
 
+20367,Contaminated Raydric@BS_MAXIMIZE,any,0,5,0,10000,5000,no,self,always,0,,,,,,,

@@ -7666,6 +7666,8 @@
 13461,Sealed_Evil_Sword,Sealed Evil Sword,5,0,,1500,100,,1,2,0x00065480,58,2,2,4,100,1,2,{ .@r = getrefine(); .@def = -50; .@mdef = -10; bonus3 bAutoSpell,"WZ_FROSTNOVA",5,100; if (.@r >= 7) { .@crit = 30; .@mdef += 10; if (.@r >= 10) { bonus bAspd,1; .@crit += 20; .@def += 50; } bonus bCritical,.@crit; } bonus bDef,.@def; bonus bMdef,.@mdef; },{},{}
 13462,Sealed_Maximum_Sword,Sealed Maximum Sword,5,0,,1500,100,,1,2,0x00065480,58,2,2,4,100,1,2,{ .@r = getrefine(); .@hp = -1000; bonus3 bAutoSpell,"MG_COLDBOLT",5,100; if (.@r >= 7) { .@atk = 65; .@hp += 500; if (.@r >= 10) { bonus bAspd,1; .@atk += 45; .@hp += 500; } bonus bBaseAtk,.@atk; } if (.@hp) { bonus bMaxHP,.@hp; } },{},{}
 13469,Illusion_Immaterial_Sword,Illusion Immaterial Sword,5,0,,900,180,,1,2,0x000654E2,63,2,2,4,120,1,2,{ .@r = getrefine(); bonus bSPDrainValue,-1; bonus bUnbreakableWeapon; if (.@r >= 12) { .@val = 20; } bonus2 bSPVanishRate,(80+(20*.@r)),(30+.@val); },{},{}
+13470,Sealed_Evil_Sword_J,Sealed Evil Sword (Alternate),5,20,,800,180:160,0,1,3,0x00065481,63,2,2,4,120,1,,{ .@r = getrefine(); bonus bAtkEle,Ele_Fire; autobonus "{ bonus bIgnoreDefClass,Class_Normal; }",50,5000; bonus3 bAutoSpell,"WL_CRIMSONROCK",3,30+3*.@r+3*(BaseLevel/5); },{},{}
+13471,Sealed_Evil_Sword_J,Sealed Evil Sword (Alternate),5,20,,800,180:160,0,1,3,0x00065481,63,2,2,4,120,1,,{ .@r = getrefine(); bonus bAtkEle,Ele_Fire; autobonus "{ bonus bIgnoreDefClass,Class_Normal; }",50,5000; bonus3 bAutoSpell,"WL_CRIMSONROCK",3,30+3*.@r+3*(BaseLevel/5); },{},{}
 13485,Honglyeong's_Sword,Honglyeong's Sword,5,20,,800,180,0,1,2,0x00040000,63,2,2,4,100,1,,{ .@r = getrefine(); bonus bBaseAtk,10*(.@r/2); bonus bLongAtkRate,4*(.@r/3); if (.@r>=9) { bonus2 bSkillUseSPrate,"GN_CARTCANNON",-10; } if (.@r>=11) { bonus2 bSkillAtk,"GN_CARTCANNON",15; } },{},{}
 13493,Cannon_Rapier-OS,Cannon Rapier-OS,5,20,,800,160:150,,1,2,0x000654E3,63,2,2,4,130,1,2,{ .@r = getrefine(); bonus3 bAutoSpell,"MG_FIREBALL",min(.@r,10),1; /* unknown rate */ if (.@r >= 7) { bonus bAspdRate,7; if (.@r >= 9) { bonus2 bSkillAtk,"MG_FIREBALL",30; if (.@r >= 11) { bonus3 bAutoSpell,"WL_HELLINFERNO",3,1; /* unknown rate */ } } } },{},{}
 //===================================================================
@@ -12349,6 +12351,7 @@
 //===================================================================
 // New Spears
 //===================================================================
+25730,Zelunium_Stone,Zelunium Stone,3,20,,10,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
 25759,Green_Dragon_Orb,Green Dragon Orb,3,6,,10,0,0,0,0,0xFFFFFFFF,63,2,,,,,,{},{},{}
 25760,Blue_Dragon_Orb,Blue Dragon Orb,3,6,,10,0,0,0,0,0xFFFFFFFF,63,2,,,,,,{},{},{}
 25761,Red_Dragon_Orb,Red Dragon Orb,3,6,,10,0,0,0,0,0xFFFFFFFF,63,2,,,,,,{},{},{}
