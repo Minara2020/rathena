@@ -74,12 +74,12 @@ prt_q,249,79,4	script	Scientist Doyeon#a1	4_M_MAYOR,{
 		}
 		if (isbegin_quest(9418) == 0) {// first entrance
 			mes "[Scientist Doyeon]";
-			mes "ฉันเป็นแค่นักวิทยาศาสตร์";
-			mes "ฉันอาศัยอยู่ที่ Prontera.";
-			mes "ฉันเป็นแค่นักวิทยาศาสตร์ธรรมดา";
-			mes "ฉันเป็นทั้งครูและกำลังทำวิจัยอยู่ .";
-			mes "และแล้ว ... สิ่งต่างๆก็เกิดขึ้น";
-			mes "ใน Prontera ในทันใดนั้น....";
+			mes "I'm a scientist";
+			mes "living in Prontera.";
+			mes "I'm just an ordinary scientist";
+			mes "teaching children and doing research.";
+			mes "And then...things came up";
+			mes "in Prontera all of a sudden....";
 			while(true) {
 				next;
 				switch( select( "About Sky Fortress", "Enter the Sky Fortress.", "End the dialogue." ) ) {
@@ -255,25 +255,25 @@ prt_q,249,79,4	script	Scientist Doyeon#a1	4_M_MAYOR,{
 
 S_Info:
 	mes "[Scientist Doyeon]";
-	mes "ฉันเป็นแค่นักวิทยาศาสตร์ ";
-	mes "ฉันอาศัยอยู่ที่ Prontera.";
-	mes "ฉันเป็นแค่นักวิทยาศาสตร์ธรรมดา";
-	mes "ฉันเป็นทั้งครูและกำลังการวิจัยอยู่ที่นี้.";
+	mes "I'm a scientist";
+	mes "living in Prontera.";
+	mes "I'm just an ordinary scientist";
+	mes "teaching children and doing research.";
 	next;
 	mes "[Scientist Doyeon]";
-	mes "แต่ตอนนี้ ... ชีวิตอย่างน้อยที่สุดเท่าที่ฉันรู้";
-	mes "แตกเป็นเสี่ยง ๆ.";
+	mes "But now...the life at least as I know it";
+	mes "has become shattered.";
 	next;
 	mes "[Scientist Doyeon]";
-	mes "ขอบคุณป้อมปราการแห่งนี้";
-	mes "ดูเหมือนกองขยะขนาดใหญ่,";
-	mes "หมู่บ้านของเรากลายเป็นกองขยะ";
-	mes "ที่ยังไม่สลาย.";
+	mes "Thanks to this fortress";
+	mes "looking like a huge trash can,";
+	mes "our village has turned into a trash heap";
+	mes "that doesn't even decay.";
 	next;
 	mes "[Scientist Doyeon]";
-	mes "สิ่งปลูกสร้างที่พังทลาย,";
-	mes "ผู้คนก็ตายขึ้นเรื่อยๆ...";
-	mes "ฉันกำลังสงสัยพวกขุนนางและทหาร ที่ the Prontera Palace";
+	mes "Buildings fall down,";
+	mes "people keep dying out...";
+	mes "I have to wonder what the nobility and soldiers at the Prontera Palace";
 	mes "are up to when things are like this.";
 	next;
 	mes "[Scientist Doyeon]";
