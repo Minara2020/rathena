@@ -29,7 +29,6 @@ Armor:
     - Type: REFINE_COST_OVER10
       Price: 100000
       Material: 6223
-      Breakable: false
     - Type: REFINE_COST_HD
       Price: 20000
       Material: 6241
@@ -57,98 +56,98 @@ Armor:
     - Level: 4
       Bonus: 100
     - Level: 5
-      NormalChance: 95
-      EnrichedChance: 5
-      EventNormalChance: 95
+      NormalChance: 60
+      EnrichedChance: 90
+      EventNormalChance: 60
       EventEnrichedChance: 95
       Bonus: 200
     - Level: 6
-      NormalChance: 80
-      EnrichedChance: 5
-      EventNormalChance: 80
+      NormalChance: 40
+      EnrichedChance: 70
+      EventNormalChance: 40
       EventEnrichedChance: 80
       Bonus: 200
     - Level: 7
-      NormalChance: 80
-      EnrichedChance: 5
-      EventNormalChance: 80
+      NormalChance: 40
+      EnrichedChance: 70
+      EventNormalChance: 40
       EventEnrichedChance: 80
       Bonus: 200
     - Level: 8
-      NormalChance: 50
-      EnrichedChance: 5
-      EventNormalChance: 50
+      NormalChance: 20
+      EnrichedChance: 40
+      EventNormalChance: 20
       EventEnrichedChance: 50
       Bonus: 200
     - Level: 9
-      NormalChance: 50
-      EnrichedChance: 5
-      EventNormalChance: 50
+      NormalChance: 20
+      EnrichedChance: 40
+      EventNormalChance: 20
       EventEnrichedChance: 50
       Bonus: 300
     - Level: 10
-      NormalChance: 35
-      EnrichedChance: 5
-      EventNormalChance: 35
+      NormalChance: 9
+      EnrichedChance: 20
+      EventNormalChance: 9
       EventEnrichedChance: 35
       Bonus: 300
     - Level: 11
-      NormalChance: 80
-      EnrichedChance: 80
-      EventNormalChance: 80
-      EventEnrichedChance: 80
-      Bonus: 300
-    - Level: 12
-      NormalChance: 70
-      EnrichedChance: 70
-      EventNormalChance: 70
-      EventEnrichedChance: 70
-      Bonus: 300
-    - Level: 13
-      NormalChance: 70
-      EnrichedChance: 70
-      EventNormalChance: 70
-      EventEnrichedChance: 70
-      Bonus: 400
-    - Level: 14
-      NormalChance: 60
-      EnrichedChance: 60
-      EventNormalChance: 60
-      EventEnrichedChance: 60
-      Bonus: 400
-    - Level: 20
-      NormalChance: 50
-      EnrichedChance: 50
-      EventNormalChance: 50
-      EventEnrichedChance: 50
-      Bonus: 400
-    - Level: 16
-      NormalChance: 50
-      EnrichedChance: 50
-      EventNormalChance: 50
-      EventEnrichedChance: 50
-      Bonus: 400
-    - Level: 17
-      NormalChance: 40
-      EnrichedChance: 40
-      EventNormalChance: 40
-      EventEnrichedChance: 40
-      Bonus: 500
-    - Level: 18
-      NormalChance: 30
-      EnrichedChance: 30
-      EventNormalChance: 30
-      EventEnrichedChance: 30
-      Bonus: 500
-    - Level: 19
-      NormalChance: 20
-      EnrichedChance: 20
+      NormalChance: 8
+      EnrichedChance: 8
       EventNormalChance: 20
       EventEnrichedChance: 20
+      Bonus: 300
+    - Level: 12
+      NormalChance: 8
+      EnrichedChance: 8
+      EventNormalChance: 20
+      EventEnrichedChance: 20
+      Bonus: 300
+    - Level: 13
+      NormalChance: 8
+      EnrichedChance: 8
+      EventNormalChance: 16
+      EventEnrichedChance: 16
+      Bonus: 400
+    - Level: 14
+      NormalChance: 8
+      EnrichedChance: 8
+      EventNormalChance: 16
+      EventEnrichedChance: 16
+      Bonus: 400
+    - Level: 15
+      NormalChance: 7
+      EnrichedChance: 7
+      EventNormalChance: 15
+      EventEnrichedChance: 15
+      Bonus: 400
+    - Level: 16
+      NormalChance: 7
+      EnrichedChance: 7
+      EventNormalChance: 15
+      EventEnrichedChance: 15
+      Bonus: 400
+    - Level: 17
+      NormalChance: 7
+      EnrichedChance: 7
+      EventNormalChance: 14
+      EventEnrichedChance: 14
+      Bonus: 500
+    - Level: 18
+      NormalChance: 7
+      EnrichedChance: 7
+      EventNormalChance: 14
+      EventEnrichedChance: 14
+      Bonus: 500
+    - Level: 19
+      NormalChance: 5
+      EnrichedChance: 5
+      EventNormalChance: 10
+      EventEnrichedChance: 10
       Bonus: 500
     - Level: 20
-      NormalChance: 10
-      EnrichedChance: 10
+      NormalChance: 5
+      EnrichedChance: 5
       EventNormalChance: 10
       EventEnrichedChance: 10
       Bonus: 500
@@ -163,7 +162,6 @@ WeaponLv1:
     - Type: REFINE_COST_OVER10
       Price: 100000
       Material: 6224
-      Breakable: false
     - Type: REFINE_COST_HD
       Price: 20000
       Material: 6240
@@ -183,74 +181,74 @@ WeaponLv1:
       Material: 1010
   Rates:
     - Level: 8
-      NormalChance: 95
-      EnrichedChance: 10
-      EventNormalChance: 95
+      NormalChance: 60
+      EnrichedChance: 90
+      EventNormalChance: 60
       EventEnrichedChance: 95
     - Level: 9
-      NormalChance: 85
-      EnrichedChance: 10
-      EventNormalChance: 85
+      NormalChance: 40
+      EnrichedChance: 70
+      EventNormalChance: 40
       EventEnrichedChance: 85
     - Level: 10
-      NormalChance: 55
-      EnrichedChance: 10
-      EventNormalChance: 55
+      NormalChance: 19
+      EnrichedChance: 30
+      EventNormalChance: 19
       EventEnrichedChance: 55
     - Level: 11
-      NormalChance: 80
-      EnrichedChance: 80
-      EventNormalChance: 80
-      EventEnrichedChance: 80
-    - Level: 12
-      NormalChance: 70
-      EnrichedChance: 70
-      EventNormalChance: 70
-      EventEnrichedChance: 70
-    - Level: 13
-      NormalChance: 70
-      EnrichedChance: 70
-      EventNormalChance: 70
-      EventEnrichedChance: 70
-    - Level: 14
-      NormalChance: 60
-      EnrichedChance: 60
-      EventNormalChance: 60
-      EventEnrichedChance: 60
-    - Level: 15
-      NormalChance: 50
-      EnrichedChance: 50
-      EventNormalChance: 50
-      EventEnrichedChance: 50
-    - Level: 16
-      NormalChance: 50
-      EnrichedChance: 50
-      EventNormalChance: 50
-      EventEnrichedChance: 50
-      Bonus: 300
-    - Level: 17
-      NormalChance: 40
-      EnrichedChance: 40
+      NormalChance: 18
+      EnrichedChance: 18
       EventNormalChance: 40
       EventEnrichedChance: 40
-      Bonus: 300
-    - Level: 18
-      NormalChance: 30
-      EnrichedChance: 30
+    - Level: 12
+      NormalChance: 18
+      EnrichedChance: 18
+      EventNormalChance: 40
+      EventEnrichedChance: 40
+    - Level: 13
+      NormalChance: 18
+      EnrichedChance: 18
+      EventNormalChance: 35
+      EventEnrichedChance: 35
+    - Level: 14
+      NormalChance: 18
+      EnrichedChance: 18
+      EventNormalChance: 35
+      EventEnrichedChance: 35
+    - Level: 15
+      NormalChance: 18
+      EnrichedChance: 18
+      EventNormalChance: 30
+      EventEnrichedChance: 30
+    - Level: 16
+      NormalChance: 17
+      EnrichedChance: 17
       EventNormalChance: 30
       EventEnrichedChance: 30
       Bonus: 300
-    - Level: 19
-      NormalChance: 20
-      EnrichedChance: 20
+    - Level: 17
+      NormalChance: 17
+      EnrichedChance: 17
       EventNormalChance: 20
       EventEnrichedChance: 20
       Bonus: 300
+    - Level: 18
+      NormalChance: 17
+      EnrichedChance: 17
+      EventNormalChance: 20
+      EventEnrichedChance: 20
+      Bonus: 300
+    - Level: 19
+      NormalChance: 15
+      EnrichedChance: 15
+      EventNormalChance: 15
+      EventEnrichedChance: 15
+      Bonus: 300
     - Level: 20
-      NormalChance: 10
-      EnrichedChance: 10
-      EventNormalChance: 10
-      EventEnrichedChance: 10
+      NormalChance: 15
+      EnrichedChance: 15
+      EventNormalChance: 15
+      EventEnrichedChance: 15
       Bonus: 300
 WeaponLv2:
   StatsPerLevel: 300
@@ -263,7 +261,6 @@ WeaponLv2:
     - Type: REFINE_COST_OVER10
       Price: 100000
       Material: 6224
-      Breakable: false
     - Type: REFINE_COST_HD
       Price: 20000
       Material: 6240
@@ -283,79 +280,79 @@ WeaponLv2:
       Material: 1011
   Rates:
     - Level: 7
-      NormalChance: 95
-      EnrichedChance: 10
-      EventNormalChance: 95
+      NormalChance: 60
+      EnrichedChance: 90
+      EventNormalChance: 60
       EventEnrichedChance: 95
     - Level: 8
-      NormalChance: 85
-      EnrichedChance: 10
-      EventNormalChance: 85
+      NormalChance: 40
+      EnrichedChance: 70
+      EventNormalChance: 40
       EventEnrichedChance: 85
     - Level: 9
-      NormalChance: 60
-      EnrichedChance: 10
-      EventNormalChance: 60
+      NormalChance: 20
+      EnrichedChance: 40
+      EventNormalChance: 20
       EventEnrichedChance: 60
     - Level: 10
-      NormalChance: 45
-      EnrichedChance: 10
-      EventNormalChance: 45
+      NormalChance: 19
+      EnrichedChance: 30
+      EventNormalChance: 19
       EventEnrichedChance: 45
     - Level: 11
-      NormalChance: 80
-      EnrichedChance: 80
-      EventNormalChance: 80
-      EventEnrichedChance: 80
-    - Level: 12
-      NormalChance: 70
-      EnrichedChance: 70
-      EventNormalChance: 70
-      EventEnrichedChance: 70
-    - Level: 13
-      NormalChance: 70
-      EnrichedChance: 70
-      EventNormalChance: 70
-      EventEnrichedChance: 70
-    - Level: 14
-      NormalChance: 60
-      EnrichedChance: 60
-      EventNormalChance: 60
-      EventEnrichedChance: 60
-    - Level: 15
-      NormalChance: 50
-      EnrichedChance: 50
-      EventNormalChance: 50
-      EventEnrichedChance: 50
-    - Level: 16
-      NormalChance: 50
-      EnrichedChance: 50
-      EventNormalChance: 50
-      EventEnrichedChance: 50
-      Bonus: 600
-    - Level: 17
-      NormalChance: 40
-      EnrichedChance: 40
+      NormalChance: 18
+      EnrichedChance: 18
       EventNormalChance: 40
       EventEnrichedChance: 40
-      Bonus: 600
-    - Level: 18
-      NormalChance: 30
-      EnrichedChance: 30
+    - Level: 12
+      NormalChance: 18
+      EnrichedChance: 18
+      EventNormalChance: 40
+      EventEnrichedChance: 40
+    - Level: 13
+      NormalChance: 18
+      EnrichedChance: 18
+      EventNormalChance: 35
+      EventEnrichedChance: 35
+    - Level: 14
+      NormalChance: 18
+      EnrichedChance: 18
+      EventNormalChance: 35
+      EventEnrichedChance: 35
+    - Level: 15
+      NormalChance: 18
+      EnrichedChance: 18
+      EventNormalChance: 30
+      EventEnrichedChance: 30
+    - Level: 16
+      NormalChance: 17
+      EnrichedChance: 17
       EventNormalChance: 30
       EventEnrichedChance: 30
       Bonus: 600
-    - Level: 19
-      NormalChance: 20
-      EnrichedChance: 20
+    - Level: 17
+      NormalChance: 17
+      EnrichedChance: 17
       EventNormalChance: 20
       EventEnrichedChance: 20
       Bonus: 600
+    - Level: 18
+      NormalChance: 17
+      EnrichedChance: 17
+      EventNormalChance: 20
+      EventEnrichedChance: 20
+      Bonus: 600
+    - Level: 19
+      NormalChance: 15
+      EnrichedChance: 15
+      EventNormalChance: 15
+      EventEnrichedChance: 15
+      Bonus: 600
     - Level: 20
-      NormalChance: 10
-      EnrichedChance: 10
-      EventNormalChance: 10
-      EventEnrichedChance: 10
+      NormalChance: 15
+      EnrichedChance: 15
+      EventNormalChance: 15
+      EventEnrichedChance: 15
       Bonus: 600
 WeaponLv3:
   StatsPerLevel: 500
@@ -368,7 +365,6 @@ WeaponLv3:
     - Type: REFINE_COST_OVER10
       Price: 100000
       Material: 6224
-      Breakable: false
     - Type: REFINE_COST_HD
       Price: 20000
       Material: 6240
@@ -380,89 +376,92 @@ WeaponLv3:
       Price: 100000
       Material: 6226
       Breakable: false
+    - Type: REFINE_COST_HOLINK
+      Price: 20000
+      Material: 7620
     - Type: REFINE_COST_WAGJAK
       Price: 10000
       Material: 984
   Rates:
     - Level: 6
-      NormalChance: 95
-      EnrichedChance: 95
-      EventNormalChance: 95
+      NormalChance: 60
+      EnrichedChance: 90
+      EventNormalChance: 60
       EventEnrichedChance: 95
     - Level: 7
-      NormalChance: 90
-      EnrichedChance: 90
-      EventNormalChance: 90
+      NormalChance: 50
+      EnrichedChance: 80
+      EventNormalChance: 50
       EventEnrichedChance: 90
     - Level: 8
-      NormalChance: 70
-      EnrichedChance: 70
-      EventNormalChance: 70
+      NormalChance: 20
+      EnrichedChance: 40
+      EventNormalChance: 20
       EventEnrichedChance: 70
     - Level: 9
-      NormalChance: 60
-      EnrichedChance: 60
-      EventNormalChance: 60
+      NormalChance: 20
+      EnrichedChance: 40
+      EventNormalChance: 20
       EventEnrichedChance: 60
     - Level: 10
-      NormalChance: 45
-      EnrichedChance: 45
-      EventNormalChance: 45
+      NormalChance: 19
+      EnrichedChance: 30
+      EventNormalChance: 19
       EventEnrichedChance: 45
     - Level: 11
-      NormalChance: 80
-      EnrichedChance: 80
-      EventNormalChance: 80
-      EventEnrichedChance: 80
-    - Level: 12
-      NormalChance: 70
-      EnrichedChance: 70
-      EventNormalChance: 70
-      EventEnrichedChance: 70
-    - Level: 13
-      NormalChance: 70
-      EnrichedChance: 70
-      EventNormalChance: 70
-      EventEnrichedChance: 70
-    - Level: 14
-      NormalChance: 60
-      EnrichedChance: 60
-      EventNormalChance: 60
-      EventEnrichedChance: 60
-    - Level: 15
-      NormalChance: 50
-      EnrichedChance: 50
-      EventNormalChance: 50
-      EventEnrichedChance: 50
-    - Level: 16
-      NormalChance: 50
-      EnrichedChance: 50
-      EventNormalChance: 50
-      EventEnrichedChance: 50
-      Bonus: 900
-    - Level: 17
-      NormalChance: 40
-      EnrichedChance: 40
+      NormalChance: 18
+      EnrichedChance: 18
       EventNormalChance: 40
       EventEnrichedChance: 40
-      Bonus: 900
-    - Level: 18
-      NormalChance: 30
-      EnrichedChance: 30
+    - Level: 12
+      NormalChance: 18
+      EnrichedChance: 18
+      EventNormalChance: 40
+      EventEnrichedChance: 40
+    - Level: 13
+      NormalChance: 18
+      EnrichedChance: 18
+      EventNormalChance: 35
+      EventEnrichedChance: 35
+    - Level: 14
+      NormalChance: 18
+      EnrichedChance: 18
+      EventNormalChance: 35
+      EventEnrichedChance: 35
+    - Level: 15
+      NormalChance: 18
+      EnrichedChance: 18
+      EventNormalChance: 30
+      EventEnrichedChance: 30
+    - Level: 16
+      NormalChance: 17
+      EnrichedChance: 17
       EventNormalChance: 30
       EventEnrichedChance: 30
       Bonus: 900
-    - Level: 19
-      NormalChance: 20
-      EnrichedChance: 20
+    - Level: 17
+      NormalChance: 17
+      EnrichedChance: 17
       EventNormalChance: 20
       EventEnrichedChance: 20
       Bonus: 900
+    - Level: 18
+      NormalChance: 17
+      EnrichedChance: 17
+      EventNormalChance: 20
+      EventEnrichedChance: 20
+      Bonus: 900
+    - Level: 19
+      NormalChance: 15
+      EnrichedChance: 15
+      EventNormalChance: 15
+      EventEnrichedChance: 15
+      Bonus: 900
     - Level: 20
-      NormalChance: 10
-      EnrichedChance: 10
-      EventNormalChance: 10
-      EventEnrichedChance: 10
+      NormalChance: 15
+      EnrichedChance: 15
+      EventNormalChance: 15
+      EventEnrichedChance: 15
       Bonus: 900
 WeaponLv4:
   StatsPerLevel: 700
@@ -475,7 +474,6 @@ WeaponLv4:
     - Type: REFINE_COST_OVER10
       Price: 100000
       Material: 6224
-      Breakable: false
     - Type: REFINE_COST_HD
       Price: 20000
       Material: 6240
@@ -495,87 +493,87 @@ WeaponLv4:
       Material: 984
   Rates:
     - Level: 5
-      NormalChance: 95
-      EnrichedChance: 5
-      EventNormalChance: 95
+      NormalChance: 60
+      EnrichedChance: 90
+      EventNormalChance: 60
       EventEnrichedChance: 95
     - Level: 6
-      NormalChance: 80
-      EnrichedChance: 10
-      EventNormalChance: 80
+      NormalChance: 40
+      EnrichedChance: 70
+      EventNormalChance: 40
       EventEnrichedChance: 80
     - Level: 7
-      NormalChance: 80
-      EnrichedChance: 10
-      EventNormalChance: 80
+      NormalChance: 40
+      EnrichedChance: 70
+      EventNormalChance: 40
       EventEnrichedChance: 80
     - Level: 8
-      NormalChance: 60
-      EnrichedChance: 10
-      EventNormalChance: 60
+      NormalChance: 20
+      EnrichedChance: 40
+      EventNormalChance: 20
       EventEnrichedChance: 60
     - Level: 9
-      NormalChance: 50
-      EnrichedChance: 10
-      EventNormalChance: 50
+      NormalChance: 20
+      EnrichedChance: 40
+      EventNormalChance: 20
       EventEnrichedChance: 50
     - Level: 10
-      NormalChance: 35
-      EnrichedChance: 10
-      EventNormalChance: 35
+      NormalChance: 9
+      EnrichedChance: 20
+      EventNormalChance: 9
       EventEnrichedChance: 35
     - Level: 11
-      NormalChance: 80
-      EnrichedChance: 80
-      EventNormalChance: 80
-      EventEnrichedChance: 80
-    - Level: 12
-      NormalChance: 70
-      EnrichedChance: 70
-      EventNormalChance: 70
-      EventEnrichedChance: 70
-    - Level: 13
-      NormalChance: 70
-      EnrichedChance: 70
-      EventNormalChance: 70
-      EventEnrichedChance: 70
-    - Level: 14
-      NormalChance: 60
-      EnrichedChance: 60
-      EventNormalChance: 60
-      EventEnrichedChance: 60
-    - Level: 15
-      NormalChance: 50
-      EnrichedChance: 50
-      EventNormalChance: 50
-      EventEnrichedChance: 50
-    - Level: 16
-      NormalChance: 40
-      EnrichedChance: 40
-      EventNormalChance: 40
-      EventEnrichedChance: 40
-      Bonus: 1200
-    - Level: 17
-      NormalChance: 30
-      EnrichedChance: 30
-      EventNormalChance: 30
-      EventEnrichedChance: 30
-      Bonus: 1200
-    - Level: 18
-      NormalChance: 30
-      EnrichedChance: 30
-      EventNormalChance: 30
-      EventEnrichedChance: 30
-      Bonus: 1200
-    - Level: 19
-      NormalChance: 20
-      EnrichedChance: 20
+      NormalChance: 8
+      EnrichedChance: 8
       EventNormalChance: 20
       EventEnrichedChance: 20
+    - Level: 12
+      NormalChance: 8
+      EnrichedChance: 8
+      EventNormalChance: 20
+      EventEnrichedChance: 20
+    - Level: 13
+      NormalChance: 8
+      EnrichedChance: 8
+      EventNormalChance: 16
+      EventEnrichedChance: 16
+    - Level: 14
+      NormalChance: 8
+      EnrichedChance: 8
+      EventNormalChance: 16
+      EventEnrichedChance: 16
+    - Level: 15
+      NormalChance: 7
+      EnrichedChance: 7
+      EventNormalChance: 15
+      EventEnrichedChance: 15
+    - Level: 16
+      NormalChance: 7
+      EnrichedChance: 7
+      EventNormalChance: 15
+      EventEnrichedChance: 15
+      Bonus: 1200
+    - Level: 17
+      NormalChance: 7
+      EnrichedChance: 7
+      EventNormalChance: 14
+      EventEnrichedChance: 14
+      Bonus: 1200
+    - Level: 18
+      NormalChance: 7
+      EnrichedChance: 7
+      EventNormalChance: 14
+      EventEnrichedChance: 14
+      Bonus: 1200
+    - Level: 19
+      NormalChance: 5
+      EnrichedChance: 5
+      EventNormalChance: 10
+      EventEnrichedChance: 10
       Bonus: 1200
     - Level: 20
-      NormalChance: 10
-      EnrichedChance: 10
+      NormalChance: 5
+      EnrichedChance: 5
       EventNormalChance: 10
       EventEnrichedChance: 10
       Bonus: 1200
@@ -590,6 +588,7 @@ Shadow:
     - Type: REFINE_COST_HD
       Price: 20000
       Material: 6241
+      Breakable: false
     - Type: REFINE_COST_ENRICHED
       Price: 20000
       Material: 7619

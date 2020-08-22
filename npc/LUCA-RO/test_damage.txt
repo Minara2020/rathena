@@ -1,1 +1,0 @@
-prontera,135,204	monster	Dummy	2411,1,5000

@@ -49,13 +49,3 @@ abyss_03,0,0	monster	Ferus	1714,10,5000
 abyss_03,0,0	monster	Ferus	1717,10,5000
 abyss_03,0,0	monster	Hydrolancer	1720,3,5000
 abyss_03,0,0,0,0	boss_monster	Detardeurus	1719,1,10800000,600000,0
-
-//==================================================
-// abyss_04 - Abyss Lake Underground Cave
-//==================================================
-abyss_04,0,0	monster	Black Acidus	20504,35,5000
-abyss_04,0,0	monster	Silver Acidus	20505,35,5000
-abyss_04,0,0	monster	Violet Ferus	20506,35,5000
-abyss_04,0,0	monster	Skeleton Ferus	20507,35,5000
-abyss_04,0,0	monster	Skeleton Acidus	20508,35,5000
-abyss_04,0,0,0,0	boss_monster	Skeleton Detale	20509,1,900000,300000,0
