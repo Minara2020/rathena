@@ -1401,7 +1401,7 @@ OnTouch:
 	specialeffect EF_LOCKON;
 	disablenpc .@stephan$;
 	enablenpc instance_npcname("#stefan_boss_event");
-	monster 'sthd_map$,103,115,"Stefan.J.E.Wolf",3473,1, instance_npcname("#stefan_boss_event") + "::OnBossDead";		// AS_RAGGED_GOLEM
+	monster 'sthd_map$,103,115,"Stefan.J.E.Wolf",3484,1, instance_npcname("#stefan_boss_event") + "::OnBossDead";		// AS_RAGGED_GOLEM
 	'boss_id = $@mobid[0];
 	donpcevent instance_npcname("#stefan_boss_status") + "::OnStart";
 	donpcevent instance_npcname("#stefan_boss_zombie") + "::OnStart";

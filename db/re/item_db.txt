@@ -1186,7 +1186,7 @@
 //===================================================================
 // Instruments
 //===================================================================
-1867,Safety_Knuckle,Safety Knuckle,5,10000,,1800,210,,1,2,0xFFFF7FFF,63,2,2,4,170,1,,{ .@r = getrefine(); bonus2 bAddClass,Class_All,10; bonus2 bSkillAtk,"SR_KNUCKLEARROW",(.@r>=9)?25:10; if (.@r>=7) { bonus bBaseAtk,40; bonus bAspdRate,15; } if (.@r>=9) { autobonus "{ bonus2 bAddSize,Size_All,15; }",20,10000,BF_WEAPON,"{ specialeffect2 EF_BLOODDRAIN; }"; } if (.@r>=11) { bonus bDelayrate,-20; } },{},{}
+1867,Safety_Knuckle,Safety Knuckle,5,10000,,1800,210,,1,2,0x00008000,56,2,2,4,170,1,,{ .@r = getrefine(); bonus2 bAddClass,Class_All,10; bonus2 bSkillAtk,"SR_KNUCKLEARROW",(.@r>=9)?25:10; if (.@r>=7) { bonus bBaseAtk,40; bonus bAspdRate,15; } if (.@r>=9) { autobonus "{ bonus2 bAddSize,Size_All,15; }",20,10000,BF_WEAPON,"{ specialeffect2 EF_BLOODDRAIN; }"; } if (.@r>=11) { bonus bDelayrate,-20; } },{},{}
 1900,Violin_of_Vicious_Mind,Violin of Vicious Mind,5,20,,1300,130:50,,1,1,0x00080000,63,1,2,4,160,1,13,{ bonus bAtk,pow(min(getrefine(),15),2); bonus bMatk,pow(min(getrefine(),15),2)/2; },{},{}
 1901,Violin,Violin,5,4000,,700,50,,1,3,0x00080000,63,1,2,1,2,1,13,{},{},{}
 1902,Violin_,Violin,5,4000,,700,50,,1,4,0x00080000,63,1,2,1,2,1,13,{},{},{}
@@ -13063,6 +13063,7 @@
 //===================================================================
 // More Costumes
 //===================================================================
+31026,Stephen_Jack_Ernest_Wolf_Card,Stephen Jack Ernest Wolf Card,6,20,,10,,,,,0xFFFFFFFF,63,2,64,,,,,{ autobonus "{ bonus bFlee,200; }",30,10000,BF_SHORT|BF_LONG,"{ specialeffect2 EF_FIRESPLASHHIT; }"; autobonus "{ bonus bSpeedRate,20; }",25,10000,BF_MAGIC,"{ specialeffect2 EF_FIRESPLASHHIT; }"; bonus3 bAutoSpellWhenHit,"SO_FIREWALK",35,10; bonus5 bAutoSpellWhenHit,"SO_ELECTRICWALK",80,10,BF_MAGIC,0; },{},{}
 31027,C_Pretty_Bear,Costume Pretty Bear,4,0,,0,,,,0,0xFFFFFFFF,63,2,1024,,1,0,1480,{},{},{}
 31028,C_Black_Cat_Hood,Costume Black Cat Hood,4,0,,0,,,,0,0xFFFFFFFF,63,2,1024,,1,0,1481,{},{},{}
 31029,C_Pig_Nose,Costume Pig Nose,4,0,,0,,,,0,0xFFFFFFFF,63,2,4096,,1,0,1482,{},{},{}
