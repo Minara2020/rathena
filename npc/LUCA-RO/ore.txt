@@ -15,29 +15,6 @@ Bug Report. Dollaporn Naraphan [ FB ]
 Contact Us. Dollaporn Naraphan [ FB ]																					 
 ==========================================================
 */
-
-prt_in,57,60,3	script	Mineral Extraction	620,{
-	switch(select("~ Oridecon:~ Elunium"))
-	{
-		case 1:
-			.@count_oridecon = (countitem(756) / 5);
-			delitem 756,(.@count_oridecon*5);
-			getitem 984,.@count_oridecon;
-			end;
-			
-		case 2:
-			.@count_elunium = (countitem(757) / 5);
-			delitem 757,(.@count_elunium*5);
-			getitem 985,.@count_elunium;
-			end;
-	}
-	end;
-	OnInit: 
-		waitingroom "[ï] √«¡·√Ë ORE ",0; 
-	end;
-}
-
-
 prontera,146,151,3	script	Homunculus	898,{
 	mes "[ Homunculus ]";
 	mes "©—π “¡“√∂®—¥°“√‚Œ¡ÿπ";
