@@ -13736,6 +13736,7 @@
 //===================================================================
 // New Warlock Spell Books
 //===================================================================
+55048,Ancient_Hero's_Bravery,Ancient Hero's Bravery,,20,,1,,,,,0x03EFDFFF,63,2,,,1,,,{ lapine_upgrade 55048; },{},{}
 100065,WL_MB_SG,Spell Book (Storm Gust),11,0,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "WL_READING_SB_READING",1; },{},{}
 100066,WL_MB_LOV,Spell Book (Lord of Vermilion),11,0,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "WL_READING_SB_READING",2; },{},{}
 100067,WL_MB_MS,Spell Book (Meteor Storm),11,0,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "WL_READING_SB_READING",3; },{},{}
