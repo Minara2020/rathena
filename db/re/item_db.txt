@@ -12503,6 +12503,7 @@
 27361,Contaminated_Wanderer_Card,Contaminated Wanderer Card,6,20,,10,,,,,,,,2,,,,,{ bonus2 bAddSize,Size_Large,30; bonus2 bAddSize,Size_Medium,30; },{},{}
 27362,Contaminated_Spider_Queen_Card,Contaminated Spider Queen Card,6,20,,10,,,,,,,,4,,,,,{ bonus2 bSubEle,Ele_All,-30; bonus2 bMagicAtkEle,Ele_Earth,100; bonus2 bMagicAtkEle,Ele_Water,100; },{},{}
 27363,Contaminated_Dark_Lord_Card,Contaminated Dark Lord Card,6,20,,10,,,,,,,,8,,,,,{ bonus bAspd,1; },{},{}
+31026,Stephen_Jack_Ernest_Wolf_Card,Stephen Jack Ernest Wolf Card,6,20,,10,,,,,0xFFFFFFFF,63,2,64,,,,,{ autobonus "{ bonus bFlee,200; }",30,10000,BF_SHORT|BF_LONG,"{ specialeffect2 EF_FIRESPLASHHIT; }"; autobonus "{ bonus bSpeedRate,20; }",25,10000,BF_MAGIC,"{ specialeffect2 EF_FIRESPLASHHIT; }"; bonus3 bAutoSpellWhenHit,"SO_FIREWALK",35,10; bonus5 bAutoSpellWhenHit,"SO_ELECTRICWALK",80,10,BF_MAGIC,0; },{},{}
 //===================================================================
 // New Katars
 //===================================================================
@@ -13841,3 +13842,83 @@
 1100004,Concentrated_B_P,Concentrated Blue Potion,0,10,,2,,,,,0xFFFFFFFF,63,2,,,120,,,{ itemheal 0,rand(340,360); },{},{}
 1100005,Concentrated_G_P,Concentrated Gold Potion,0,10,,2,,,,,0xFFFFFFFF,63,2,,,180,,,{ itemheal rand(2730,2750),0; },{},{}
 
+//===================================================================
+// Abyss Dungeon 4
+//===================================================================
+
+// Armors
+43033,Black_Acidus_Card,Black Acidus Card,6,20,,10,,,,,,,,769,,,,,{ bonus2 bSkillAtk,"SL_SMA",20; bonus2 bSkillAtk,"SL_SWOO",10; },{},{}
+43034,Silver_Acidus_Card,Silver Acidus Card,6,20,,10,,,,,,,,769,,,,,{ bonus2 bSkillAtk,"SJ_FALLINGSTAR",20; bonus2 bSkillAtk,"SJ_SOLARBURST",10; },{},{}
+43035,Violet_Ferus_Card,Violet Ferus Card,6,20,,10,,,,,,,,136,,,,,{ bonus bBaseAtk,25; bonus2 bAddClass,Class_All,4; },{},{}
+43036,Skeleton_Acidus_Card,Skeleton Acidus Card,6,20,,10,,,,,,,,136,,,,,{ bonus2 bMagicAtkEle,Ele_All,12; },{},{}
+43037,Skeleton_Ferus_Card,Skeleton Ferus Card,6,20,,10,,,,,,,,769,,,,,{ .@r = getrefine(); bonus bDef,35; bonus2 bSubClass,Class_Boss,.@r/2; },{},{}
+43038,Skeleton_Detale_Card,Skeleton Detale Card,6,20,,10,,,,,,63,,64,,,,,{ skill "TF_DOUBLE",10; bonus bDoubleRate,70; bonus2 bAddEff,Eff_Silence,10000; bonus bMdef,-20; bonus3 bAutoSpell,"SA_LANDPROTECTOR",1,10; },{},{}
+20946,Dragon_Scale_Hood,Dragon Scale Hood,4,1000,,500,0,23,0,1,0x03EFDFFF,63,2,4,,170,1,,{ .@r = getrefine(); bonus bDef,20; bonus bHealPower2,15; bonus bAddItemHealRate,15; bonus bMdef,2; if (.@r>=7) { bonus2 bSubRace,RC_Dragon,(.@r>11)?5:2; } if (.@r>=9) { autobonus2 "{ bonus2 bHPRegenRate,2000,1000; }",20,3000,BF_WEAPON|BF_MAGIC,"{ specialeffect2 EF_HEAL3; }"; } },{},{}
+22208,Dragon_Scale_Boots,Dragon Scale Boots,4,400,,600,0,25,0,1,0x03EFDFFF,63,2,64,,170,1,,{ .@r = getrefine(); bonus bMaxSP,500; bonus bAspdRate,7; bonus bVariableCastrate,-7; if (.@r>=7) { bonus2 bSubRace,RC_Dragon,(.@r>11)?5:2; } if (.@r>=9) { autobonus2 "{ bonus2 bSPRegenRate,500,1000; }",20,3000,BF_WEAPON|BF_MAGIC,"{ specialeffect2 EF_HEAL3; }"; } },{},{}
+
+// ETC
+25759,Green_Dragon_Orb,Green Dragon Orb,3,6,,10,0,0,0,0,0xFFFFFFFF,63,2,,,,,,{},{},{}
+25760,Blue_Dragon_Orb,Blue Dragon Orb,3,6,,10,0,0,0,0,0xFFFFFFFF,63,2,,,,,,{},{},{}
+25761,Red_Dragon_Orb,Red Dragon Orb,3,6,,10,0,0,0,0,0xFFFFFFFF,63,2,,,,,,{},{},{}
+25762,Gold_Dragon_Orb,Gold Dragon Orb,3,6,,10,0,0,0,0,0xFFFFFFFF,63,2,,,,,,{},{},{}
+25763,Purple_Dragon_Orb,Purple Dragon Orb,3,6,,10,0,0,0,0,0xFFFFFFFF,63,2,,,,,,{},{},{}
+25764,Silver_Dragon_Orb,Silver Dragon Orb,3,6,,10,0,0,0,0,0xFFFFFFFF,63,2,,,,,,{},{},{}
+25765,Large_Dragon_Bone,Large Dragon Bone,3,6,,10,0,0,0,0,0xFFFFFFFF,63,2,,,,,,{},{},{}
+25766,Small_Dragon_Bone,Small Dragon Bone,3,6,,10,0,0,0,0,0xFFFFFFFF,63,2,,,,,,{},{},{}
+
+// Card
+43033,Black_Acidus_Card,Black Acidus Card,6,20,,10,,,,,,,,769,,,,,{ bonus2 bSkillAtk,"SL_SMA",20; bonus2 bSkillAtk,"SL_SWOO",10; },{},{}
+43034,Silver_Acidus_Card,Silver Acidus Card,6,20,,10,,,,,,,,769,,,,,{ bonus2 bSkillAtk,"SJ_FALLINGSTAR",20; bonus2 bSkillAtk,"SJ_SOLARBURST",10; },{},{}
+43035,Violet_Ferus_Card,Violet Ferus Card,6,20,,10,,,,,,,,136,,,,,{ bonus bBaseAtk,25; bonus2 bAddClass,Class_All,4; },{},{}
+43036,Skeleton_Acidus_Card,Skeleton Acidus Card,6,20,,10,,,,,,,,136,,,,,{ bonus2 bMagicAtkEle,Ele_All,12; },{},{}
+43037,Skeleton_Ferus_Card,Skeleton Ferus Card,6,20,,10,,,,,,,,769,,,,,{ .@r = getrefine(); bonus bDef,35; bonus2 bSubClass,Class_Boss,.@r/2; },{},{}
+43038,Skeleton_Detale_Card,Skeleton Detale Card,6,20,,10,,,,,,,,64,,,,,{ skill "TF_DOUBLE",10; bonus2 bResEff,Eff_Silence,10000; bonus5 bAutoSpell,"SA_LANDPROTECTOR",1,1,BF_MAGIC,1; bonus bMdef,-20; },{},{}
+
+//===================================================================
+// Magma Dungeon 3
+//===================================================================
+
+// Armors
+15378,Lava_Leather_Armor,Lava Leather Armor,4,0,,1500,,85,,1,0xFFFFFFFE,63,2,16,,175,1,0,{ .@r = getrefine(); bonus bBaseAtk,100; if (.@r>=7) { bonus bDef,100; } if (.@r>=9) { bonus bDef,50; } },{},{}
+15379,Lava_Leather_Suit,Lava Leather Suit,4,0,,1500,,85,,1,0xFFFFFFFE,63,2,16,,175,1,0,{ .@r = getrefine(); bonus bBaseAtk,100; if (.@r>=7) { bonus bBaseAtk,50; } if (.@r>=9) { bonus bCritAtkRate,10; } },{},{}
+15380,Lava_Leather_Robe,Lava Leather Robe,4,20,,750,,55,,1,0xFFFFFFFE,63,2,16,,175,1,0,{ .@r = getrefine(); bonus bMatk,100; if (.@r>=7) { bonus bMatk,50; } if (.@r>=9) { bonus bMatk,25; } },{},{}
+20935,Lava_Leather_Manteau,Lava Leather Manteau,4,20,,400,,50,,1,0xFFFFFFFE,63,2,4,,175,1,0,{ .@r = getrefine(); bonus bHit,10; if (.@r>=7) { bonus bHit,5; } if (.@r>=9) { bonus bHit,5; } if (.@r>=11) { bonus bDelayRate,-3; } },{},{}
+20936,Lava_Leather_Muffler,Lava Leather Muffler,4,20,,350,,35,,1,0xFFFFFFFE,63,2,4,,175,1,0,{ .@r = getrefine(); bonus bCritical,5; if (.@r>=7) { bonus bCritical,5; } if (.@r>=9) { bonus bCritAtkRate,5; } if (.@r>=11) { bonus2 bAddClass,Class_All,3; } },{},{}
+20937,Lava_Leather_Hood,Lava Leather Hood,4,20,,300,,25,,1,0xFFFFFFFE,63,2,4,,175,1,0,{ .@r = getrefine(); bonus bVariableCastrate,-10; if (.@r>=7) { bonus bVariableCastrate,-10; } if (.@r>=9) { bonus bVariableCastrate,-10; } if (.@r>=11) { bonus2 bAddEle,Ele_Fire,5; } },{},{}
+22199,Lava_Leather_Boots,Lava Leather Boots,4,0,,600,,50,,1,0xFFFFFFFE,63,2,64,,1,1,0,{ .@r = getrefine(); bonus2 bAddClass,Class_All,2; if (.@r>=7) { bonus bBaseAtk,25; } if (.@r>=9) { bonus bBaseAtk,15; } },{},{}
+22200,Lava_Leather_Shoes,Lava Leather Shoes,4,0,,600,,50,,1,0xFFFFFFFE,63,2,64,,1,1,0,{ .@r = getrefine(); bonus bCritical,5; if (.@r>=7) { bonus2 bAddSize,Size_All,5; } if (.@r>=9) { bonus bCritAtkRate,5; } },{},{}
+22201,Lava_Leather_Sandals,Lava Leather Sandals,4,0,,500,,25,,1,0xFFFFFFFE,63,2,64,,1,1,0,{ .@r = getrefine(); bonus2 bAddEle,Ele_Fire,3; if (.@r>=7) { bonus bMatk,25; } if (.@r>=9) { bonus bMatk,15; } },{},{}
+
+// Card
+27346,Rigid_Muspellskoll_Card,Rigid Muspellskoll Card,6,20,,10,,,,,,,,32,,,,,{ bonus2 bSubRace,RC_Dragon,30; bonus2 bSubRace,RC_Demon,30; bonus2 bSubRace,RC_Brute,30; },{},{}
+27347,Rigid_Kaho_Card,Rigid Kaho Card,6,20,,10,,,,,,,,2,,,,,{ bonus2 bAddEle,Ele_Earth,10; },{},{}
+27348,Rigid_Lava_Golem_Card,Rigid Lava Golem,6,20,,10,,,,,,,,2,,,,,{ .@r = getrefine(); bonus2 bMagicAddEle,Ele_Neutral,3; if (.@r>=7){ bonus2 bMagicAddEle,Ele_Neutral,5; } if (.@r>=9){ bonus2 bMagicAddEle,Ele_Neutral,7; } },{},{}
+27349,Rigid_Explosion_Card,Rigid Explosion Card,6,20,,10,,,,,,,,32,,,,,{ bonus2 bSubEle,Ele_Fire,15; bonus2 bSubRace,RC_Dragon,15; },{},{}
+27350,Rigid_Earth_Deleter_Card,Rigid Earth Deleter Card,6,20,,10,,,,,,,,769,,,,,{ .@r = getrefine(); bonus bMaxSPrate,.@r/2+2; bonus bSPrecovRate,10; },{},{}
+27351,Rigid_Sky_Deleter_Card,Rigid Sky Deleter Card,6,20,,10,,,,,,,,769,,,,,{ bonus bMaxHPrate,5; },{},{}
+27352,Rigid_Nightmare_Terror_Card,Rigid Nightmare Terror Card,6,20,,10,,,,,,,,64,,,,,{ bonus bMaxSPrate,5; },{},{}
+27353,Rigid_Blazer_Card,Rigid Blazer Card,6,20,,10,,,,,,,,32,,,,,{ bonus2 bSubEle,Ele_Neutral,15; bonus2 bSubRace,RC_Demon,15; },{},{}
+
+//===================================================================
+// Einbech Dungeon 3
+//===================================================================
+
+// Armors
+
+// Weapons
+
+// ETC
+25809,Redium,Redium,3,0,,,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+25810,Rindium,Rindium,3,0,,,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+25811,Odium,Odium,3,0,,,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+25812,Purdium,Purdium,3,0,,,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+25813,Whidium,Whidium,3,0,,,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+25814,Dynite,Dynite,3,6,,,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+
+// Card
+300001,Poisonous_Card,Poisonous Card,6,20,,10,,,,,0xFFFFFFFF,63,2,2,,,,,{ bonus2 bAddEle,Ele_Poison,25; },{},{}
+300002,Toxious_Card,Toxious Card,6,20,,10,,,,,0xFFFFFFFF,63,2,16,,,,,{ bonus bMaxHPrate,10; bonus bLongAtkDef,5; },{},{}
+300003,White_Porcellio_Card,White Porcellio Card,6,20,,10,,,,,0xFFFFFFFF,63,2,64,,,,,{ bonus bBaseAtk,20+getrefine(); },{},{}
+300004,Neo_Mineral_Card,Neo Mineral Card,6,20,,10,,,,,0xFFFFFFFF,63,2,4,,,,,{ bonus bDef,30+getrefine()*3; },{},{}
+300005,Abyssman_Card,Abyssman Card,6,20,,10,,,,,0xFFFFFFFF,63,2,64,,,,,{ bonus bMaxHPrate,10; bonus2 bSkillAtk,"SO_EARTHGRAVE",10; },{},{}
+300006,Jewelry_Ant_Card,Jewelry Ant Card,6,20,,10,,,,,0xFFFFFFFF,63,2,8,,,,,{ bonus3 bAutoSpell,"SO_PSYCHIC_WAVE",1,20; },{},{}
