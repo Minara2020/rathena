@@ -5150,10 +5150,10 @@ Body:
     Title: Encounter Loki
   - Id: 9315
     Title: Exploring the dimensional gap
-    TimeLimit: +23h
+    TimeLimit: +4h
   - Id: 9316
     Title: Re-exploring the crack of spaces
-    TimeLimit: +23h
+    TimeLimit: +4h
   - Id: 9318
     Title: Pursuing Hiding Morocc
     Targets:
