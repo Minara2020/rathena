@@ -1048,7 +1048,7 @@ struct clan{
 #endif
 
 #if (MIN_CHARS + MAX_CHAR_VIP + MAX_CHAR_BILLING) > MAX_CHARS
-#error Config of MAX_CHARS is invalid
+//#error Config of MAX_CHARS is invalid
 #endif
 
 #if MIN_STORAGE > MAX_STORAGE
