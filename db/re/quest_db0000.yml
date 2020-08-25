@@ -344,7 +344,7 @@ Body:
     Title: Shop guide
   - Id: 1261
     Title: Cursed Swordman
-    TimeLimit: +4h
+    TimeLimit: +23h
   - Id: 1263
     Title: Cursed Swordman
   - Id: 1264
@@ -950,7 +950,7 @@ Body:
     Title: Job Change to Monk - Become a Monk
   - Id: 3040
     Title: The Curse of Baphomet
-    TimeLimit: +4h
+    TimeLimit: +12h
   - Id: 3041
     Title: The Curse of Baphomet
     TimeLimit: +3mn
@@ -1120,7 +1120,7 @@ Body:
     Title: Z Gang Wanted - Clean Sweep of Z Gang
   - Id: 3135
     Title: Nidhoggur's Nest
-    TimeLimit: +4h
+    TimeLimit: +3d
   - Id: 3136
     Title: Nidhoggur's Nest Time Limit
     TimeLimit: +4h
@@ -1539,7 +1539,7 @@ Body:
     TimeLimit: +3h
   - Id: 4229
     Title: Devil in the Cave
-    TimeLimit: +4h
+    TimeLimit: +23h
   - Id: 4254
     Title: Fairy with a stomache
   - Id: 4255
@@ -1894,7 +1894,7 @@ Body:
     Title: To the Lab...
   - Id: 5112
     Title: Laboratory Restricted Access
-    TimeLimit: +4h
+    TimeLimit: +3d
   - Id: 5113
     Title: "[Rest] Lord Knight"
     Targets:
@@ -3973,7 +3973,7 @@ Body:
     Title: Morocc castle seal
   - Id: 7577
     Title: Space distortion
-    TimeLimit: +4h
+    TimeLimit: +23h
   - Id: 7578
     Title: Rampaging Box
     Targets:
@@ -4086,13 +4086,13 @@ Body:
     Title: Core Collection
     Drops:
       - Mob: RECON_ROBOT
-        Item: Operation_Control_Device
+        Item: Power_Control_Device
         Rate: 5000
       - Mob: REPAIR_ROBOT
-        Item: Operation_Control_Device
+        Item: Power_Control_Device
         Rate: 5000
       - Mob: EXPLORATION_ROVER
-        Item: Operation_Control_Device
+        Item: Power_Control_Device
         Rate: 5000
   - Id: 7616
     Title: Core Collection - Down
@@ -4986,7 +4986,7 @@ Body:
         Count: 1
   - Id: 9223
     Title: Will there be Peace at the Hospital?
-    TimeLimit: +4h
+    TimeLimit: +7d
   - Id: 9224
     Title: Explore Hospital 2F
     TimeLimit: +1h
@@ -5161,12 +5161,12 @@ Body:
         Count: 1
   - Id: 9319
     Title: Pursuing Hiding Morocc Continues
-    TimeLimit: +4h
+    TimeLimit: +23h
   - Id: 9335
     Title: Search for shards of Gigantes
   - Id: 9336
     Title: Go back to Professor Bernhard
-    TimeLimit: +4h
+    TimeLimit: +7d
   - Id: 9337
     Title: Wrapping up the Adventure
   - Id: 9457
@@ -6207,11 +6207,12 @@ Body:
     Title: Let the Specialists Handle It
   - Id: 11377
     Title: Act of Kindness
+    TimeLimit: +1d
   - Id: 11378
     Title: "Trick or treat "
   - Id: 11379
     Title: Final Room
-    TimeLimit: +4h
+    TimeLimit: +23h
   - Id: 11380
     Title: Final Room
     Targets:
@@ -7030,19 +7031,19 @@ Body:
         Count: 1
   - Id: 12271
     Title: In progress general culvert single day service
-    TimeLimit: +4h
+    TimeLimit: +23h
   - Id: 12272
     Title: In progress hard culvert single day service
-    TimeLimit: +4h
+    TimeLimit: +23h
   - Id: 12273
     Title: In progress general culvert weekly service
-    TimeLimit: +4h
+    TimeLimit: +6d17h
   - Id: 12274
     Title: In progress hard culvert weekly service
-    TimeLimit: +4h
+    TimeLimit: +6d17h
   - Id: 12278
     Title: Towards Bakonawa Lake...
-    TimeLimit: +4h
+    TimeLimit: +7d
   - Id: 12279
     Title: Get Rid of Bakonawa
     Targets:
@@ -7122,7 +7123,7 @@ Body:
     Title: Meeting Hugin
   - Id: 12317
     Title: Trace of Time Travel
-    TimeLimit: +4h
+    TimeLimit: +23h
   - Id: 12318
     Title: Corrupted Soul Hunt
     Targets:
@@ -7141,7 +7142,7 @@ Body:
     Title: Space Distortion
   - Id: 12325
     Title: Faceworm's Nest after-effects
-    TimeLimit: +4h
+    TimeLimit: +23h
   - Id: 12326
     Title: The owner of old ring
     TimeLimit: +1d
@@ -7158,7 +7159,7 @@ Body:
     Title: Skull-faced Girl
   - Id: 12331
     Title: Trail of Toy Factory
-    TimeLimit: +4h
+    TimeLimit: +23h
   - Id: 12334
     Title: Trace of Time Travel
     TimeLimit: +23h
@@ -7190,7 +7191,7 @@ Body:
     Title: Strange Ancient Science
   - Id: 12347
     Title: Trace of Laboratory Access
-    TimeLimit: +4h
+    TimeLimit: +23h
   - Id: 12363
     Title: ?????? ?? ??
   - Id: 12369
@@ -7862,7 +7863,7 @@ Body:
     Title: Nightmarish Jitterbug
   - Id: 13182
     Title: "Nightmarish Jitterbug: Waiting"
-    TimeLimit: +4h
+    TimeLimit: +23h
   - Id: 13183
     Title: "Nightmarish Jitterbug: Completed"
   - Id: 13184
@@ -8302,12 +8303,12 @@ Body:
     TimeLimit: +20s
   - Id: 15002
     Title: "Memorial dungeon: Sara's Memory"
-    TimeLimit: +4h
+    TimeLimit: +20h
   - Id: 15003
     Title: Adventurer leon
   - Id: 15005
     Title: "Memorial Dungeon: Isle of Bios"
-    TimeLimit: +4h
+    TimeLimit: +23h
   - Id: 15006
     Title: Isle of Bios Exploration
   - Id: 15007
@@ -8318,7 +8319,7 @@ Body:
     TimeLimit: +5mn
   - Id: 15050
     Title: "Memorial Dungeon: Airship Assault"
-    TimeLimit: +4h
+    TimeLimit: +23h
   - Id: 15051
     Title: "Memorial Dungeon: Airship Assault"
     TimeLimit: +5mn
@@ -9558,7 +9559,7 @@ Body:
         Count: 150
   - Id: 60200
     Title: Endless Tower Effect
-    TimeLimit: +4h
+    TimeLimit: +7d
   - Id: 60201
     Title: Endless Tower Time Limit
     TimeLimit: +4h
