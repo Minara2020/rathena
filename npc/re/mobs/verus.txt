@@ -25,7 +25,7 @@ verus02,0,0,0,0	monster	Explorer Robot Turbo	3249,50,0,0,0
 verus03,0,0,0,0	monster	Illegal Promotion	3159,40,0,0,0
 verus03,0,0,0,0	monster	Explorer Robot	3156,50,0,0,0
 verus03,0,0,0,0	monster	Repair Robot	3155,50,0,0,0
-verus03,0,0,0,0	monster	Ruin Grace Believer	3158,10,0,0,0
+verus03,0,0,0,0	monster	Ruin Grace Believer	3158,20,0,0,0
 // un_bunker
 un_bunker,0,0,0,0	monster	Thief Bug	1051,6,0,0,0
 un_bunker,0,0,0,0	monster	Smelly Ghoul	3255,68,0,0,0
