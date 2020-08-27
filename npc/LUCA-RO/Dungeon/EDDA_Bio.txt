@@ -32,7 +32,7 @@ mes "Rune-Midgards";
 next;
 mes .@npc$;
 mes "ใช้ไอเท็ม";
-mes "^000099Somatology Experimental Fragment^000000 : 250 ชิ้น";
+mes "^000099Cash Coin 10^000000 : 5 ชิ้น";
 mes "ในการเปิด ดันเจียน";
 cutin "3rd_gn_demi01",255;
 next;
@@ -116,7 +116,7 @@ end;
 	mes "ท่านไม่ใช่หัวหน้าปาร์ตี้";
 	end;
 
-	} else if(countitem(25787) < 250){
+	} else if(countitem(41002) < 5){
 
 	mes .@npc$;
 	mes "ท่านไม่มีไอเปิดกุญแจ";
@@ -124,8 +124,8 @@ end;
 
 	}
 
-	//announce "[Ceara] : นักผจญภัยกลุ่ม "+getpartyname(.@party_id)+" ได้เข้าร่วม Glastheim Fall แล้ว !!",0,0xF6CB38;
-	delitem 25787,250;
+	announce "[Ceara] : นักผจญภัยกลุ่ม "+getpartyname(.@party_id)+" ได้เข้าร่วม EDDA Somatology Laboratory แล้ว !!",0,0xF6CB38;
+	delitem 41002,5;
 
 	
 	JOINDUN:
@@ -394,7 +394,7 @@ end;
 
 if($BItser==0){
 
-mes "[???]";
+mes "[ Rewards | ของราวัล ]";
 mes "สมบัติถูกค้นไปแล้ว";
 mes "ไม่สามารถค้นหาได้อีก";
 end;
@@ -405,14 +405,6 @@ end;
 
 set $BItser,0;
 set .@rand, rand(200);
-	if (.@rand >= 0 && .@rand < 190){
-		set .@eff,611;
-		set .@acc,0;
-		setarray .@item[0],42038;
-		setarray .@itemea[0],10,20,30,40,50,10,20,30,40,50,10,20,30,40,50,100;
-		goto GETBIO;
-				}
-
 	if (.@rand >= 190 && .@rand < 200){
 		set .@eff,18;
 		set .@acc,0;
@@ -439,7 +431,7 @@ mes .@npc$;
 mes "ขอบคุณทุกท่านจริงๆ";
 mes "พวกเรากลับกันเถอะ";
 next;
-	getitem 42038,5;
+	getitem 25786,100;
 	set $@BioLabs,0;
 	warp "yuno",213,345;
 end;

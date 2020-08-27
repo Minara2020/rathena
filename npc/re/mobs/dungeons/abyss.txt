@@ -59,4 +59,4 @@ abyss_04,0,0	monster	Purple Ferus	20614,35,5000
 abyss_04,0,0	monster	Silver Acidus	20615,35,5000
 abyss_04,0,0	monster	Bone Ferus	20616,35,5000
 abyss_04,0,0	monster	Bone Acidus	20617,35,5000
-abyss_04,0,0,0,0	boss_monster	Bone Detardeurus	20618,1,900000,300000,0
+abyss_04,0,0,0,0	boss_monster	Bone Detardeurus	20618,1,10800000,600000,0

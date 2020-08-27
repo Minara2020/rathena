@@ -1,0 +1,258 @@
+-	script	ออฟ Biolab Weapons	-1,{
+	  disable_items;
+        if (MaxWeight - Weight < 1000) {
+                mes "กระเป๋ามีน้ำหนักเกิน. ลดน้ำหนักก่อนแล้วค่อยมาใหม่.";
+                close;
+        }
+        mes "Lavian ฉันเป็นผู้ช่วยของ Ceara";
+        mes "ฉันได้รับหน้าที่ในการ ช่วยท่านเสริมพลังอาวุธ";
+        mes "ไอเท็มสำหรับการออฟคือ";
+        mes "- Biological Research Documents";
+		mes "<URL>โปรดระมัดระวังให้ดี<INFO></INFO></URL>";
+		mes "^FF0000เมื่อทำการออฟ^000000";
+		mes "^FF0000[การ์ดของเจ้าจะสูญหาย!!]^000000";
+        next;
+		mes "เจ้าพร้อมแล้วใช่ไหม สามารถอ่านราละเอียดได้เลย";
+		mes "ฉันขอให้ เสริมพลังอาวุธสำเร็จละ !!";
+		next;
+        if (select("สอบถามวิธีการออฟ ?","เพิ่มความสามารถให้ Weapon Bio Lab 5") == 1) {
+				mes "[Biotechnology Research Institute]";
+                mes "เจ้าสามารถเก็บ ^0000FFSomatology Research Document^000000 ได้เวลาเจ้าลงดันเจี้ยน.";
+				mes "^0000FFสามารถหามันได้จาก Monster ทุกตัวใน Tomb Of Honor^000000";
+                next;
+                mes "[Biotechnology Research Institute]";
+                mes "ข้าสามารถออฟ Weapon Bio Lab 5 ได้แค่ 39 แบบเท่านั้น. โดยที่อาวุธนั้นต้องไม่ใช่^0000FFอาวุธแบบธรรมดา^000000.";
+                next;
+                mes "[Biotechnology Research Institute]";
+                mes "ข้าจะไม่สุ่มความสามารถให้. แต่เจ้าสามารถเลือกความสามารถเองได้เลย.";
+				mes "มีเพียงความสามารถสุดท้ายเท่านั้นที่ข้าจะสุ่มมัน !.";
+                next;
+                mes "[Biotechnology Research Institute]";
+                mes "ในการอัพเกรดครั้งสุดท้าย, มันต้องใช้ไอเท็ม ^FF0000Somatology Research Document^000000 จำนวนมาก. อย่าลืมในจุดนี้ล่ะ.";
+                next;
+                mes "[Biotechnology Research Institute]";
+                mes "เมื่อเจ้าอัพเกรดช่อง 4 เต็มขั้นแล้ว, ถ้าเจ้าจ่ายเพิ่มเจ้าจะได้สุ่มโบนัสความสามารถในช่องที่ 3.";
+                close;
+        }
+        set .@part,EQI_HAND_R;
+        if (!getequipisequiped(.@part)) {
+                mes "[Biotechnology Research Institute]";
+                mes "ได้ใส่อาวุธมาหรือเปล่า ?";
+                close;
+        }
+        set .@equip_id,getequipid(.@part);
+        set .@equip_name$,getequipname(.@part);
+        set .@card3,getequipcardid(.@part,3);
+        setarray .@enchant1st[0],4808,4832,4814,4818,4863; //Fighting_Spirit4,Expert_Archer1,Spell2,Vitality2,DelayafterAttack1Lv
+        setarray .@enchant2nd[0],4820,4833,4813,4817,4864; //Fighting_Spirit5,Expert_Archer2,Spell3,Vitality3,DelayafterAttack2Lv
+        setarray .@enchant3rd[0],4821,4834,4812,4816,4865; //Fighting_Spirit6,Expert_Archer3,Spell4,MHP1,DelayafterAttack3Lv
+        setarray .@enchant4th[0],4822,4835,4826,4843,4866; //Fighting_Spirit7,Expert_Archer4,Spell5,MHP2,DelayafterAttack4Lv
+		setarray .@enchant_cost[0],10,40,150,300,30;
+        switch (.@equip_id) {
+        case 21051: //Volar
+        case 21052: //Vernan
+        case 32023: //Argen Blanco
+        case 1333: //Golden Wrench
+        case 16092: //Engine Pilebunker
+        case 28138: //Maxi Spanner
+		case 28765: //Judgment Slasher
+		case 28766: //Repent Slasher
+		case 28044: //Agudo Filo
+		case 28042: //Ripper Cross
+		case 26158: //Crimson Rose Stick
+		case 2055: //Staff of Miracle
+		case 2056: //Gravitation Staff
+		case 26161: //Penitentia
+		case 2057: //Adorare Staff
+		case 16095: //Lucis Flail
+		case 18185: //Sharp Star
+		case 18187: //Falken Shooter
+		case 18186: //Aiming Bow
+		case 32350: //Farthezan
+		case 32024: //Harve
+		case 32025: //Fortridge
+		case 32351: //Estal
+		case 16093: //Coolant Injection
+		case 16094: //Gene Rod
+		case 28767: //Jack the Knife
+		case 28768: //Platinum Dagger
+		case 18184: //Rapid Fire
+		case 28633: //Boltijin
+		case 26159: //Psychic Spear Rod
+		case 26160: //Dust Grave
+		case 1865: //Raging Dragon Fist
+		case 1866: //Dedicated Bandage
+		case 16096: //Bright Pendulum
+		case 18188: //Wind Gale
+		case 26212: //Heart Whip
+		case 26213: //Scarlet Ribbon
+		case 32107: //Black Circle
+		case 32108: //Antique Cello
+                if (!.@card3) { //4th slot 1st try enchanting
+                        set .@cost,.@enchant_cost[0];
+                        set .@number,1;
+                        mes "[Biotechnology Research Institute]";
+                        mes "ต้องการที่จะออฟ ^0000FF"+.@equip_name$+"^000000 ใช่ไหม?";
+                        mes "สำหรับการออฟขั้นที่ "+.@number+"นั้น, เจ้าต้องใช้ ^FF0000Somatology Research Document^000000 จำนวน ^0000FF"+.@cost+"^000000อัน.";
+                        next;
+						if (countitem(25786) < .@cost) {
+                                                        mes "[Biotechnology Research Institute]";
+                                                        mes "หืมมม, เจ้าขาด ^FF0000Somatology Research Document^000000 อีก"+(.@cost - countitem(25786))+" อัน. ไปหามาเพิ่มซะ, แล้วค่อยมาหาข้า.";
+                                                        close;
+                                                }
+                        set .@select,select("ออก","Fighting Spirit","Archery","Spell","Sharp","Fatal");
+                        switch (.@select) {
+                        case 1:
+                                mes "[Biotechnology Research Institute]";
+                                mes "ได้เลย, กลับมาใหม่เมื่อเจ้าพร้อม.";
+                                close;
+                        case 2:
+                                set .@enchant,.@enchant1st[.@select-2];
+                                break;
+                        case 3:
+                                set .@enchant,.@enchant1st[.@select-2];
+                                break;
+                        case 4:
+                                set .@enchant,.@enchant1st[.@select-2];
+                                break;
+                        case 5:
+                                set .@enchant,.@enchant1st[.@select-2];
+                                break;
+                        case 6:
+                                set .@enchant,.@enchant1st[.@select-2];
+                                break;
+                        case 7:
+                                set .@enchant,.@enchant1st[.@select-2];
+                                break;
+                        }
+                } else {
+                        if (.@card3 == .@enchant1st[0] || .@card3 == .@enchant1st[1] || .@card3 == .@enchant1st[2] ||
+                                .@card3 == .@enchant1st[3] || .@card3 == .@enchant1st[4] || .@card3 == .@enchant1st[5]) {
+                                set .@cost,.@enchant_cost[1];
+                                set .@number,2;
+                        } else if (.@card3 == .@enchant2nd[0] || .@card3 == .@enchant2nd[1] || .@card3 == .@enchant2nd[2] ||
+                                .@card3 == .@enchant2nd[3] || .@card3 == .@enchant2nd[4] || .@card3 == .@enchant2nd[5]) {
+                                set .@cost,.@enchant_cost[2];
+                                set .@number,3;
+                        } else if (.@card3 == .@enchant3rd[0] || .@card3 == .@enchant3rd[1] || .@card3 == .@enchant3rd[2] ||
+                                .@card3 == .@enchant3rd[3] || .@card3 == .@enchant3rd[4] || .@card3 == .@enchant3rd[5]) {
+                                set .@cost,.@enchant_cost[3];
+                                set .@number,4;
+                        } else if (.@card3 == .@enchant4th[0] || .@card3 == .@enchant4th[1] || .@card3 == .@enchant4th[2] ||
+                                .@card3 == .@enchant4th[3] || .@card3 == .@enchant4th[4] || .@card3 == .@enchant4th[5]) {
+                                set .@card2,getequipcardid(.@part,4);
+                                set .@cost,.@enchant_cost[4];
+                                if (.@card2) {
+										mes "[Hugin's Magic Master]"; //Custom text
+                                        mes "รองเท้าของเจ้าอัพเกรดเต็มขั้นแล้ว.";
+                                        mes "เอามันมาให้ข้าใหม่ถ้าเจ้าอยากออฟอีก.";
+                                        close;
+								}
+                                //3rd slot random enchanting
+                                switch (.@card3) {
+                                        case 4822: //Fighting_Spirit7
+                                        case 4835: //Expert_Archer4
+                                        case 4826: //Spell5
+                                        case 4843: //MHP2
+                                        case 4866: //DelayafterAttack4Lv
+                                                set .@enchant,callfunc("F_Rand",29594,29595,29596,29598,29599,29600,29601,29602,29603,29604,29605,29606,29607); //Bear's_Power,Runaway_Magic,Speed_Of_Light,Muscle_Fool,Hawkeye,Lucky_Day
+                                                mes "[Biotechnology Research Institute]"; //Custom text
+                                                mes "ดูเหมือนว่าเจ้าจะอัพเกรดช่องที่ 4 เต็มขั้นแล้ว.";
+                                                mes "ถ้างั้นข้าจะสุ่มโบนัสความสามารถในช่องที่ 3 ให้ถ้าเจ้ายอมที่จะจ่ายเพิ่ม.";
+                                                next;
+                                                mes "[Biotechnology Research Institute]";
+                                                mes "ในการสุ่มออฟ ^0000FF"+.@equip_name$+"^000000 ในช่องที่ 3 นั้น. จำเป็นต้องใช้ ^FF0000Somatology Research Document^000000 จำนวน^0000FF"+.@cost+"^000000 อัน.";
+                                                next;
+                                                if (select("Quit","Effect Upgrade!") == 1) {
+                                                        mes "[Biotechnology Research Institute]";
+                                                        mes "ได้เลย, กลับมาใหม่เมื่อเจ้าพร้อม.";
+                                                        close;
+                                                }
+                                                if (countitem(25786) < .@cost) {
+                                                        mes "[Biotechnology Research Institute]";
+                                                        mes "หืมมม, เจ้าขาด ^FF0000Somatology Research Document^000000 อีก"+(.@cost - countitem(25786))+" อัน. ไปหามาเพิ่มซะ, แล้วค่อยมาหาข้า.";
+                                                        close;
+                                                }
+                                                specialeffect2 EF_REPAIRWEAPON;
+                                                set .@equip_refine,getequiprefinerycnt(.@part);
+                                                delitem 25786,.@cost; //Coagulated_Spell
+                                                delequip .@part;
+                                                mes "[Biotechnology Research Institute]";
+                                                mes "นี่จะเป็นหินความสามารถพิเศษของเจ้า.";
+                                                mes "5555... ข้ามันเมพจริงๆ.";
+                                                mes "ขอบใจที่ไว้ใจข้า.";
+                                                getitem2 .@equip_id,1,1,.@equip_refine,0,0,0,.@enchant,.@card3;
+                                                close;
+                                }
+                        }
+                        //4th slot 2nd try enchanting
+                        if (.@card3 == .@enchant1st[0])
+                                set .@enchant,.@enchant2nd[0];
+                        else if (.@card3 == .@enchant1st[1])
+                                set .@enchant,.@enchant2nd[1];
+                        else if (.@card3 == .@enchant1st[2])
+                                set .@enchant,.@enchant2nd[2];
+                        else if (.@card3 == .@enchant1st[3])
+                                set .@enchant,.@enchant2nd[3];
+                        else if (.@card3 == .@enchant1st[4])
+                                set .@enchant,.@enchant2nd[4];
+                        else if (.@card3 == .@enchant1st[5])
+                                set .@enchant,.@enchant2nd[5];
+                        //4th slot 3rd try enchanting
+                        if (.@card3 == .@enchant2nd[0])
+                                set .@enchant,.@enchant3rd[0];
+                        else if (.@card3 == .@enchant2nd[1])
+                                set .@enchant,.@enchant3rd[1];
+                        else if (.@card3 == .@enchant2nd[2])
+                                set .@enchant,.@enchant3rd[2];
+                        else if (.@card3 == .@enchant2nd[3])
+                                set .@enchant,.@enchant3rd[3];
+                        else if (.@card3 == .@enchant2nd[4])
+                                set .@enchant,.@enchant3rd[4];
+                        else if (.@card3 == .@enchant2nd[5])
+                                set .@enchant,.@enchant3rd[5];
+                        //4th slot 4th try enchanting
+                        if (.@card3 == .@enchant3rd[0])
+                                set .@enchant,.@enchant4th[0];
+                        else if (.@card3 == .@enchant3rd[1])
+                                set .@enchant,.@enchant4th[1];
+                        else if (.@card3 == .@enchant3rd[2])
+                                set .@enchant,.@enchant4th[2];
+                        else if (.@card3 == .@enchant3rd[3])
+                                set .@enchant,.@enchant4th[3];
+                        else if (.@card3 == .@enchant3rd[4])
+                                set .@enchant,.@enchant4th[4];
+                        else if (.@card3 == .@enchant3rd[5])
+                                set .@enchant,.@enchant4th[5];
+                        mes "[Biotechnology Research Institute]";
+                        mes "การออฟ ^0000FF"+.@equip_name$+"^000000's ช่องที่ 4 ในขั้นที่ ^0000FF"+.@number+"^000000 นั้น. ต้องใช้ ^FF0000Somatology Research Document^000000 จำนวน ^0000FF"+.@cost+"^000000 อัน.";
+                        next;
+                        if (select("Quit","Effect Upgrade!") == 1) {
+                                mes "[Biotechnology Research Institute]";
+                                mes "ได้เลย, กลับมาใหม่เมื่อเจ้าพร้อม.";
+                                close;
+                        }
+                        if (countitem(25786) < .@cost) {
+                                mes "[Biotechnology Research Institute]";
+                                mes "หืมมม, เจ้าขาด ^FF0000Somatology Research Document^000000 อีก"+(.@cost - countitem(25786))+" อัน. ไปหามาเพิ่มซะ, แล้วค่อยมาหาข้า.";
+                                close;
+                        }
+                }
+                break;
+        default:
+                mes "[Biotechnology Research Institute]";
+                mes "ไอเท็มไม่ถูกต้อง.";
+                close;
+        }
+        specialeffect2 EF_REPAIRWEAPON;
+        set .@equip_refine,getequiprefinerycnt(.@part);
+        delitem 25786,.@cost; //Coagulated_Spell
+        delequip .@part;
+        mes "[Biotechnology Research Institute]";
+        mes "พยายามออฟขั้นที่ ^630000"+.@number+"^000000.";
+        getitem2 .@equip_id,1,1,.@equip_refine,0,0,0,0,.@enchant;
+        close;
+		end;
+}
+
+yuno,214,350,5	duplicate(ออฟ Biolab Weapons)	Lavian#prtfor	865
