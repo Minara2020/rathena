@@ -81,43 +81,4 @@ end;
 
 // Duplicates
 //============================================================
-alberta,25,240,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#alb	894
-aldebaran,135,118,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#alde	894
-amatsu,200,79,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#ama	894
-ayothaya,207,169,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#ayo	894
-comodo,184,158,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#com	894
-einbech,57,36,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#einbe	894
-einbroch,57,202,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#einbr	894
-geffen,115,72,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#gef	894
-gonryun,156,122,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#gon	894
-hugel,89,150,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#hug	894
-izlude,125,118,5	duplicate(BuffsSupports)	เติมเลือดและแจก AB#izl	894
-jawaii,250,139,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#jaw	894
-lighthalzen,152,100,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#lhz	894
-louyang,226,103,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#lou	894
-manuk,272,144,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#man	894
-mid_camp,203,289,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#mid	894
-moc_ruins,72,164,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#moc	894
-morocc,153,97,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#mor	894
-moscovia,220,191,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#mos	894
-niflheim,212,182,5	duplicate(BuffsSupports)	เติมเลือดและแจก AB#nif	894
-payon,179,106,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#pay	894
-prontera,160,195,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#prt	894
-rachel,125,116,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#rac	894
-splendide,201,153,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#spl	894
-thor_camp,249,74,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#thor	894
-umbala,105,148,3	duplicate(BuffsSupports)	เติมเลือดและแจก AB#umb	894
-veins,217,121,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#ve	894
-xmas,143,136,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#xmas	894
-yuno,164,45,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#yuno	894
-
-// Duplicates (Renewal)
-//============================================================
-brasilis,194,221,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#bra	894
-dewata,195,187,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#dew	894
-dicastes01,201,194,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#dic	894
-ecl_in01,45,60,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#ecl	894
-malangdo,132,114,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#mal	894
-malaya,205,205,6	duplicate(BuffsSupports)	เติมเลือดและแจก AB#ma	894
-mora,55,152,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#mora	894
-//==============================================
+prontera,160,195,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#prt	936

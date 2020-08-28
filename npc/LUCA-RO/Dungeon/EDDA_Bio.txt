@@ -1,7 +1,8 @@
-yuno,216,346,4	script	Ceara	982,{
+yuno,139,204,4	script	Ceara	982,{
 
 // ------------------------------------------------
 	set .@npc$,"[ Ceara ]";
+	set .instance_delay, 3600000;	// 1 hr
 // ------------------------------------------------
 
 mes .@npc$;
@@ -32,7 +33,7 @@ mes "Rune-Midgards";
 next;
 mes .@npc$;
 mes "ใช้ไอเท็ม";
-mes "^000099Cash Coin 10^000000 : 5 ชิ้น";
+mes "^000099Cash Coin 1^000000 : 5 ชิ้น";
 mes "ในการเปิด ดันเจียน";
 cutin "3rd_gn_demi01",255;
 next;
@@ -116,7 +117,7 @@ end;
 	mes "ท่านไม่ใช่หัวหน้าปาร์ตี้";
 	end;
 
-	} else if(countitem(41002) < 5){
+	} else if(countitem(41003) < 5){
 
 	mes .@npc$;
 	mes "ท่านไม่มีไอเปิดกุญแจ";
@@ -125,7 +126,7 @@ end;
 	}
 
 	announce "[Ceara] : นักผจญภัยกลุ่ม "+getpartyname(.@party_id)+" ได้เข้าร่วม EDDA Somatology Laboratory แล้ว !!",0,0xF6CB38;
-	delitem 41002,5;
+	delitem 41003,5;
 
 	
 	JOINDUN:
