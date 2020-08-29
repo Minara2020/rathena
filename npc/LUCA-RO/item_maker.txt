@@ -56,7 +56,7 @@
 //  ADD YOUR NPC HERE
 //============================================================
 
-prontera,179,221,4	script	Equip Quest	10041,{ 
+prontera,179,221,4	script	Equip Quest	726,{ 
 
 	mes "[ Equip Master ]";
 	mes "นี่คือรายการเควส Equip Item";	

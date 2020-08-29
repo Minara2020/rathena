@@ -15,7 +15,7 @@ Bug Report. Dollaporn Naraphan [ FB ]
 Contact Us. Dollaporn Naraphan [ FB ]																					 
 ==========================================================
 */
-prontera,146,151,3	script	Homunculus	898,{
+prontera,165,157,3	script	Homunculus	898,{
 	mes "[ Homunculus ]";
 	mes "ฉันสามารถจัดการโฮมุน";
 	mes "เพิ่มความสนิทให้กับคุณได้น่ะ";

@@ -1,4 +1,4 @@
-prontera,143,205,4	script	PVP Staff	468,{
+prontera,143,205,4	script	PVP Staff	605,{
 
 	set .@heading$,"[ เจ้าสังเวียนการประลอง ]";
 
@@ -30,7 +30,7 @@ case 2:
 end;
 
 OnInit: 
-    waitingroom "[•] PVP Room",0; 
+    waitingroom "[•] ห้องตีกัน 2499",0; 
     end; 
 
 }
