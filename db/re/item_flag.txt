@@ -22,6 +22,8 @@
 12109,1 //Poring_Box
 12024,1 //Red_Pouch_Of_Surprise
 
+//7486,1
+
 // Item group container
 603,2 //Old_Blue_Box
 616,2 //Old_Card_Album

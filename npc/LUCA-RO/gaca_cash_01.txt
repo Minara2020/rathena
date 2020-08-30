@@ -1,0 +1,209 @@
+-	shop	GC_CG	-1,20515:1,20764:1,20407:1,20132:1,31099:1,20167:1,41003:50,6226:1,6225:1
+sp_cor,171,222,4	script	Gacha Cash#1	562,{
+		set .name$,"[ Gacha Cash ]";
+		set .@itemea,50;
+mes .name$;
+mes "กิจกรรมสุ่มคอสตูมสุดแร่จาก GM-Luca";
+mes "สวัสดีครับ ยินดีให้บริการครับ";
+mes "ใช้ ^2CDEB8Cash^000000 : "+.@itemea+" Cash.";
+mes "คุณมี : ^DE2C52"+#CASHPOINTS+"^000000 Cash.";
+next;
+mes "ขอราวัล จ๊ะ BY GM-Luca";
+mes "--- Cash Coin ---";
+mes "<ITEM>5 Cash Coin x1<INFO>41000</INFO></ITEM>";
+mes "<ITEM>10 Cash Coin x1<INFO>41003</INFO></ITEM>";
+mes "<ITEM>100 Cash Coin x1<INFO>41005</INFO></ITEM>";
+mes "--- Costume Item ---";
+mes "<ITEM>Costume Vicious Mind Aura Crimson x1<INFO>20407</INFO></ITEM>";
+mes "<ITEM>Costume Headdress of Ontama Aria x1<INFO>31099</INFO></ITEM>";
+mes "<ITEM>Costume Deviruchi Headphone x1<INFO>20167</INFO></ITEM>";
+mes "--- Mythical Item ---";
+mes "<ITEM>Costume Fallen Angel Wing x1<INFO>20764</INFO></ITEM>";
+mes "--- Limited Item ---";
+mes "<ITEM>Costume Aura Vicious Mind x1<INFO>20132</INFO></ITEM>";
+mes "--- Legend Item ---";
+mes "<ITEM>Costume Magic Circle x1<INFO>20515</INFO></ITEM>";
+//mes "กรุณาเลือกเมนูที่ท่านต้องการครับ";
+//cutin "jpn_anni04",2;
+next;
+menu " - สุ่มไอเท็ม 1 ครั้ง",L_YES," - ดูของรางวัล",L_SEE," - ยกเลิก",L_EX;
+
+L_YES:
+	close2;
+	cutin "jpn_anni04",255;
+	if (#CASHPOINTS < .@itemea){
+		mes .name$;
+		mes "คุณไม่มีไอเท็มที่เรากำหนดไว้ครับ";
+		end;
+	}
+	
+	set #CASHPOINTS, #CASHPOINTS - .@itemea;
+	set $jackpotcash,$jackpotcash + (.@itemea/10*1);
+	
+//	specialeffect2 408;
+	progressbar "0x007000", 1;
+	
+// ====================== JACKPOT CASH =====================
+set .@randjp, rand(1000);
+
+	if (getcharid(3) == $ljp){ set $ljp,0; goto ljp; }
+
+	if (.@randjp == 1000){
+	
+ljp:	
+	set #cashpoints,#cashpoints + $jackpotcash;
+	announce "[ Jackpot ] : '"+strcharinfo(0)+"' ได้รับ "+$jackpotcash+" Cash! ระบบจะทำการรีเซทแคช",8;
+	dispbottom "[Cash] : "+#cashpoints+" Points.",0xA1EA18;
+	set $jackpotcash,0;
+	
+	}
+	
+// ====================== JACKPOT CASH =====================
+
+set .@rand, rand(200);
+//if(getgmlevel() == 99){ set .@rand,rand(195,200); }
+	if (.@rand >= 0 && .@rand < 180){
+		set .@eff,611;
+		set .@acc,0;
+		setarray .@item[0],6226,6225;
+				}
+
+	if (.@rand >= 0 && .@rand < 190){
+		set .@eff,18;
+		set .@acc,0;
+		setarray .@item[0],41000,41002,41001;	}
+
+	if (.@rand >= 195 && .@rand < 198){
+		set .@eff,338;
+		set .@acc,1;
+		setarray .@item[0],20407,31099,20167;
+	}
+	
+	if (.@rand >= 190 && .@rand < 200){
+		set .@eff,338;
+		set .@acc,1;
+		setarray .@item[0],20515,20132,20764;
+	}
+
+
+set .@get, .@item[rand(getarraysize(.@item))];
+
+//Option Item Event
+getitem .@get,1;
+specialeffect2 .@eff;
+
+//getitem .@get,1;
+//specialeffect2 .@eff;
+if (.@acc == 1){ announce "[ Gacha ] : '"+strcharinfo(0)+"' ได้รับไอเท็ม "+getitemname(.@get)+"",8; }
+end;
+
+//======================================================================================================================
+L10_YES:
+	close2;
+	cutin "jpn_anni04",255;
+	if (#CASHPOINTS < (.@itemea*10)){
+		mes .name$;
+		mes "คุณไม่มีไอเท็มที่เรากำหนดไว้ครับ";
+		end;
+	}
+	
+	set #CASHPOINTS, #CASHPOINTS - (.@itemea*10);
+	progressbar "0x007000", 1;
+	set $jackpotcash,$jackpotcash - (.@itemea/10*1);
+
+	set .loop,11;	
+
+SPINAGAIN:
+
+if(.loop > 0){
+
+	set $jackpotcash,$jackpotcash + (.@itemea/10*1);
+	
+// ====================== JACKPOT CASH =====================
+set .@randjp, rand(1000);
+
+	if (getcharid(3) == $ljp){ set $ljp,0; goto ljp2; }
+
+	if (.@randjp == 1000){
+	
+ljp2:	
+	set #cashpoints,#cashpoints + $jackpotcash;
+	announce "[ Jackpot ] : '"+strcharinfo(0)+"' ได้รับ "+$jackpotcash+" Cash! ระบบจะทำการรีเซทแคช",8;
+	dispbottom "[Cash] : "+#cashpoints+" Points.",0xA1EA18;
+	set $jackpotcash,0;
+	
+	}
+
+set .@rand, rand(200);
+set .@acc,0;
+
+//if(getgmlevel() == 99){ set .@rand,rand(195,200); }
+	if (.@rand >= 0 && .@rand < 180){
+		set .@eff,611;
+		set .@acc,0;
+		setarray .@item[0],6226,6225;
+				}
+
+	if (.@rand >= 0 && .@rand < 190){
+		set .@eff,18;
+		set .@acc,0;
+		setarray .@item[0],41003;	}
+
+	if (.@rand >= 190 && .@rand < 198){
+		set .@eff,338;
+		set .@acc,1;
+		setarray .@item[0],20407,20132,31099,20167;
+	}
+	
+	if (.@rand >= 195 && .@rand < 200){
+		set .@eff,338;
+		set .@acc,1;
+		setarray .@item[0],20515,20764;
+	}
+
+
+set .@get, .@item[rand(getarraysize(.@item))];
+
+//Option Item Event
+getitem .@get,1;
+specialeffect2 .@eff;
+
+//getitem .@get,1;
+//specialeffect2 .@eff;
+//if (.@acc == 1){ announce "[ Gacha ] : '"+strcharinfo(0)+"' ได้รับไอเท็ม "+getitemname(.@get)+"",8; }
+if (.@get == 20764){ announce "[ Gacha ] : '"+strcharinfo(0)+"' ได้รับไอเท็ม "+getitemname(.@get)+"",8; }
+if (.@get == 20407){ announce "[ Gacha ] : '"+strcharinfo(0)+"' ได้รับไอเท็ม "+getitemname(.@get)+"",8; }
+if (.@get == 20132){ announce "[ Gacha ] : '"+strcharinfo(0)+"' ได้รับไอเท็ม "+getitemname(.@get)+"",8; }
+if (.@get == 31099){ announce "[ Gacha ] : '"+strcharinfo(0)+"' ได้รับไอเท็ม "+getitemname(.@get)+"",8; }
+if (.@get == 20167){ announce "[ Gacha ] : '"+strcharinfo(0)+"' ได้รับไอเท็ม "+getitemname(.@get)+"",8; }
+if (.@get == 20515){ announce "[ Gacha ] : '"+strcharinfo(0)+"' ได้รับไอเท็ม "+getitemname(.@get)+"",8; }
+if (.@get == 6226){ announce "[ Gacha ] : '"+strcharinfo(0)+"' ได้รับไอเท็ม "+getitemname(.@get)+"",8; }
+if (.@get == 6227){ announce "[ Gacha ] : '"+strcharinfo(0)+"' ได้รับไอเท็ม "+getitemname(.@get)+"",8; }
+
+set .loop,.loop - 1;
+goto SPINAGAIN;
+
+end;
+
+} else {
+
+end; }
+//========================================================================================================================
+
+L_SEE:
+	cutin "jpn_anni04",255;
+	callfunc "Shop_HQPC","GC_CG",1;
+
+L_EX:
+cutin "jpn_anni04",255;
+end;
+
+OnBuyItem:
+end;
+
+OnInit: 
+waitingroom "[GACA] CASH V1",0;
+end;
+}
+
+
