@@ -275,4 +275,12 @@ Body:
       Y: 67
     AdditionalMaps:
       1@sthc: true
-      1@sthd: true
+      1@sthd: true          
+  - Id: 33
+    Name: Nightmare OGH
+    Enter:
+      Map: 1@gl_k2
+      X: 150
+      Y: 20
+    AdditionalMaps:
+      2@gl_k2: true
