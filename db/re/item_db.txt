@@ -12367,6 +12367,7 @@
 25811,Odium,Odium,3,0,,,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
 25812,Purdium,Purdium,3,0,,,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
 25813,Whidium,Whidium,3,0,,,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+25814,Dynite,Dynite,3,6,,10,0,0,0,0,0xFFFFFFFF,63,2,,,,,,{},{},{}
 26007,Illusion_Spectral_Spear,Illusion Spectral Spear,5,20,,2000,240,,3,1,0x00004082,63,2,34,4,99,1,5,{ .@r = getrefine(); .@val = 3*(.@r/2); bonus2 bAddEle,Ele_Dark,(20+.@val); bonus2 bAddRace,RC_Demon,(20+.@val); bonus2 bAddRace,RC_Undead,(20+.@val); bonus2 bSubRace,RC_Demon,(10+.@val); bonus2 bSubEle,Ele_Undead,(10+.@val); bonus2 bSubEle,Ele_Dark,(10+.@val); bonus bHPGainValue,50; bonus bSPGainValue,(.@r/2); bonus2 bAddEff2,Eff_Confusion,1000; },{},{}
 26016,Royal_Knight's_Lance,Royal Knight's Lance,5,20,,1000,205,,1,2,0x00004082,63,2,34,3,175,1,5,{ .@r = getrefine(); bonus bLongAtkRate,3*(.@r/2); if (.@r>=7) bonus2 bAddClass,Class_All,5; if (.@r>=9) bonus2 bAddRace,RC_All,15; },{},{}
 //===================================================================
