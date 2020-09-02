@@ -114,7 +114,7 @@
 606,Aloebera,Aloevera,11,1500,,100,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "SM_SELFPROVOKE",1; },{},{}
 607,Yggdrasilberry,Yggdrasil Berry,0,5000,,300,,,,,0xFFFFFFFF,63,2,,,,,,{ percentheal 100,100; },{},{}
 608,Seed_Of_Yggdrasil,Yggdrasil Seed,0,5000,,300,,,,,0xFFFFFFFF,63,2,,,,,,{ percentheal 50,50; },{},{}
-609,Amulet,Amulet,2,100,,100,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+609,Amulet,Amulet,2,0,,100,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
 610,Leaf_Of_Yggdrasil,Yggdrasil Leaf,11,4000,,100,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "ALL_RESURRECTION",1; },{},{}
 611,Spectacles,Magnifier,11,40,,50,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "MC_IDENTIFY",1; },{},{}
 612,Portable_Furnace,Mini Furnace,2,150,,200,,,,,0xFFFFFFFF,63,2,,,,,,{ produce 21; },{},{}
@@ -254,8 +254,8 @@
 752,Grasshopper_Doll,Rocker Doll,3,4000,,100,,,,,,,,,,,,,{},{},{}
 753,Monkey_Doll,Yoyo Doll,3,6000,,100,,,,,,,,,,,,,{},{},{}
 754,Raccoondog_Doll,Raccoon Doll,3,5000,,100,,,,,,,,,,,,,{},{},{}
-756,Oridecon_Stone,Rough Oridecon,3,550,,200,,,,,,,,,,,,,{},{},{}
-757,Elunium_Stone,Rough Elunium,3,650,,200,,,,,,,,,,,,,{},{},{}
+756,Oridecon_Stone,Rough Oridecon,3,550,,0,,,,,,,,,,,,,{},{},{}
+757,Elunium_Stone,Rough Elunium,3,650,,0,,,,,,,,,,,,,{},{},{}
 901,Danggie,Daenggie,3,260,,10,,,,,,,,,,,,,{},{},{}
 902,Tree_Root,Tree Root,3,12,,10,,,,,,,,,,,,,{},{},{}
 903,Reptile_Tongue,Reptile Tongue,3,140,,10,,,,,,,,,,,,,{},{},{}
