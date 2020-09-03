@@ -49,9 +49,6 @@ end;
 	
 }
 
-verus04,72,112,6	script	Mass Charleston	4_F_CHARLESTON01,{ callfunc "qshop",12; }
-rebel_in,74,67,5	script	Strasse#rebel_in	4_M_TATIO,{ callfunc "qshop",11; }
-
 // etc.. Add your Shop NPCs 'Quest Shop#XXX' here
 //============================================================
 
