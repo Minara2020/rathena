@@ -45,12 +45,12 @@ sc_end SC_ORCISH;
 //sc_start 40,1800000,10; // MAGNIFICAT เร่ง
 //==============================================
 //บัพค่าอาหาร 30นาที Support rAthena
-sc_start SC_STRFood, 3600000,5;
-sc_start SC_AGIFood, 3600000,5;
-sc_start SC_VITFood, 3600000,5;
-sc_start SC_INTFood, 3600000,5;
-sc_start SC_DEXFood, 3600000,5;
-sc_start SC_LUKFood, 3600000,5;
+//sc_start SC_STRFood, 3600000,5;
+//sc_start SC_AGIFood, 3600000,5;
+//sc_start SC_VITFood, 3600000,5;
+//sc_start SC_INTFood, 3600000,5;
+//sc_start SC_DEXFood, 3600000,5;
+//sc_start SC_LUKFood, 3600000,5;
 //บัพสกิลต่างๆ
 sc_start SC_BLESSING,3600000,10;
 sc_start SC_INCREASEAGI,3600000,10;

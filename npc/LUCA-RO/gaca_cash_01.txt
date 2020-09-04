@@ -1,5 +1,5 @@
 -	shop	GC_CG	-1,20515:1,20764:1,20407:1,20132:1,31099:1,20167:1,41003:50,6226:1,6225:1
-sp_cor,171,222,4	script	Gacha Cash#1	562,{
+prontera,149,168,4	script	Gacha Cash#1	562,{
 		set .name$,"[ Gacha Cash ]";
 		set .@itemea,50;
 mes .name$;
