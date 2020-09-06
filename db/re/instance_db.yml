@@ -276,7 +276,7 @@ Body:
     AdditionalMaps:
       1@sthc: true
       1@sthd: true          
-  - Id: 33
+  - Id: 34
     Name: Nightmare OGH
     Enter:
       Map: 1@gl_k2
@@ -284,3 +284,9 @@ Body:
       Y: 20
     AdditionalMaps:
       2@gl_k2: true
+  - Id: 35
+    Name: Infinite Space
+    Enter:
+      Map: 1@infi
+      X: 29
+      Y: 4

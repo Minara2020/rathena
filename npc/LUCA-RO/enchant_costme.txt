@@ -252,6 +252,6 @@ OnInit:
 	
 	.cost = 2000000; // ค่าออฟ zeny
 	.rate = 100; // โอกาสออฟติด
-	waitingroom "Enc Costume",0;
+	waitingroom "[ออฟ] Costume",0;
 	end;
 }

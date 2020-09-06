@@ -1,0 +1,52 @@
+prontera,149,190,3	script	นักดาบ	875,{
+stopnpctimer;
+mes "GM-LUCA";
+mes "ไง.. สวัสดี "+strcharinfo(0)+" !";
+close;
+goto OnInit;
+end;
+OnInit:
+startnpctimer;
+npcspeed 200;
+end;
+OnTimer2000:
+set .@random, rand(3);
+if (.@random == 0) { npcwalkto 159,185;
+npctalk "นักดาบ : นายๆ พาเวลหน่อยเราพึ่งมาใหม่"; }
+if (.@random == 1) { npcwalkto 159,175;
+npctalk ""; }
+if (.@random == 2) { npcwalkto 159,165;
+npctalk ""; }
+end;
+
+OnTimer6000:
+set .@random, rand(3);
+if (.@random == 0) { npcwalkto 159,185;
+npctalk "ขอตังหน่อยครับผม ลูกพี่ "; }
+if (.@random == 1) { npcwalkto 155,175;
+npctalk ""; }
+if (.@random == 2) { npcwalkto 160,191;
+npctalk ""; }
+end;
+
+
+OnTimer15000:
+set .@random, rand(3);
+if (.@random == 0) { npcwalkto 159,185;
+npctalk ""; }
+if (.@random == 1) { npcwalkto 155,175;
+npctalk ""; }
+if (.@random == 2) { npcwalkto 160,191;
+npctalk ""; }
+end;
+
+OnTimer20000:
+npcwalkto 149,190;
+end;
+
+OnTimer23000:
+stopnpctimer;
+initnpctimer;
+end;
+
+}

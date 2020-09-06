@@ -28,8 +28,27 @@ OnInit:
   set .item_rate_treasure, getbattleflag("item_rate_treasure");
 	end;
 //==============================================
+// กำหนดเวลาเริ่ม x1.2
+OnClock0603:
+
+	setbattleflag("base_exp_rate", .base_exp*3/2 );
+	setbattleflag("job_exp_rate", .job_exp*3/2 );
+  
+  setbattleflag("item_rate_common", .item_rate_common*3/2 );
+  setbattleflag("item_rate_heal", .item_rate_heal*3/2 );
+  setbattleflag("item_rate_use", .item_rate_use*3/2 );
+  setbattleflag("item_rate_equip", .item_rate_equip*3/2 );
+  setbattleflag("item_rate_card", .item_rate_card*3/2 );
+  setbattleflag("item_rate_mvp", .item_rate_mvp*3/2 );
+  setbattleflag("item_rate_adddrop", .item_rate_adddrop*3/2 );
+  setbattleflag("item_rate_treasure", .item_rate_treasure*3/2 );
+
+	announce "[ระบบ] เอาละถึงเวลา Exp & Drop x1.5 !! แล้วจร้า",0;
+	atcommand "@reloadmobdb";
+	end;
+//==============================================
 // กำหนดเวลาเริ่ม x2
-OnClock1800:
+OnClock2232:
 
 	setbattleflag("base_exp_rate", .base_exp*2 );
 	setbattleflag("job_exp_rate", .job_exp*2 );
@@ -48,6 +67,7 @@ OnClock1800:
 	end;
 //==============================================
 // กำหนดเวลาหมดคูณ
+OnClock1759:
 OnClock0600:
 
 	setbattleflag("base_exp_rate", .base_exp );

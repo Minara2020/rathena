@@ -1,0 +1,33 @@
+ein_dun03,126,134,4	script	ผู้เชี่ยวชาญด้านแร่	855,{
+
+mes "สวัสดีฉันคือ [ ผู้เชี่ยวชาญด้านแร่ ]";
+mes "ฉันต้องการวัถุดิบในการทำ แร่ Dynite";
+mes "โดยท่านต้องหาแร่พวกจาก Monster";
+mes "ตามจำนวนดันนี้";
+next;
+// What Item you want to Make ?
+set .GiveItem,25814;
+// Item Requirements + Amounts
+setarray .Item[0],
+  25809,10,
+  25810,10,
+  25811,10,
+  25812,10,
+  25813,10;
+
+for( set .@i,0; .@i < getarraysize( .Item ) - 1; set .@i,.@i + 2 )
+if( countitem( .Item[.@i] ) < .Item[.@i + 1] ){
+ for( set .@i,0; .@i < getarraysize( .Item ) - 1; set .@i,.@i + 2 )
+  mes "ฉันต้องการ "+.Item[.@i + 1]+" x "+getitemname( .Item[.@i] );
+ close;
+}
+if( select("ฉันขอแลก ^FF0000"+getitemname( .GiveItem )+"^000000:ยกเลิก") == 2 ) close;
+for( set .@i,0; .@i < getarraysize( .Item ) - 1; set .@i,.@i + 2 )
+delitem .Item[ .@i ],.Item[ .@i + 1 ];
+getitem .GiveItem,1;
+mes "คุณได้รับ ^FF0000"+getitemname( .GiveItem )+"^000000 เรียบร้อยแล้ว";
+mes "ฉันขอคุณท่านมาก ๆ ไว้ต้องการเมื่อไร่สามารถมาแลกได้นะ";
+announce "["+strcharinfo(0)+"] ได้รวมแร่ ["+getitemname( .GiveItem )+"] สำเร็จ",0;
+close;
+
+}

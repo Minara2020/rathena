@@ -82,3 +82,4 @@ end;
 // Duplicates
 //============================================================
 prontera,160,195,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#prt	936
+cmd_fild07,62,274,4	duplicate(BuffsSupports)	เติมเลือดและแจก AB#cmd	936

@@ -324,16 +324,16 @@ cmd_fild07,192,58,4	script	Rahasu#cmd	100,{
 	close;
 }
 
-cmd_fild07,52,280,4	script	Hallosu#cmd	100,{
-	mes "[Hallosu]";
-	mes "Hello, this is one of the";
-	mes "lighthouses that make up";
-	mes "Paros Lighthouse. However,";
-	mes "right now it's undergoing";
-	mes "renovation, so it's not";
-	mes "open to the public.";
-	close;
-}
+//cmd_fild07,52,280,4	script	Hallosu#cmd	100,{
+//	mes "[Hallosu]";
+//	mes "Hello, this is one of the";
+//	mes "lighthouses that make up";
+//	mes "Paro@s Lighthouse. However,";
+//	mes "right now it's undergoing";
+//	mes "renovation, so it's not";
+//	mes "open to the public.";
+//	close;
+//}
 
 cmd_fild07,299,83,4	script	Zain#cmd	100,{
 	set .@n$,"["+strnpcinfo(1)+"]";

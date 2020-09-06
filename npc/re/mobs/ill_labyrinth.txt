@@ -15,7 +15,7 @@ prt_mz03_i,0,0,0,0	monster	Chaotic Ghostring	20529,3,5000
 prt_mz03_i,0,0,0,0	monster	Chaotic Killer Mantis	20530,5,5000
 prt_mz03_i,0,0,0,0	monster	Chaotic Poporing	20531,40,5000
 prt_mz03_i,0,0,0,0	monster	Chaotic Stem Worm	20532,20,5000
-prt_mz03_i,0,0,0,0	boss_monster	Chaotic Baphomet	20520,1,7200000,600000,0
+prt_mz03_i,0,0,0,0	boss_monster	Chaotic Baphomet	20520,1,3600000,600000,0
 
 
 // 3rd Floor No.01	-------------------------------------------------------------

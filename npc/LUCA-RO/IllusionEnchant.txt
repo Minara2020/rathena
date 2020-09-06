@@ -1,7 +1,7 @@
 //	== Illusion Enchants ==
 //	  == ikarngraphic ==
 
-prontera,145,245,5	script	Illusion Enchanter#cus	10314,{
+prontera,180,253,5	script	Illusion Enchanter#cus	10314,{
 
 	disable_items;
 
@@ -13,8 +13,7 @@ prontera,145,245,5	script	Illusion Enchanter#cus	10314,{
 mes .name$;
 mes "ยินดีให้บริการตลอดเวลาค่ะ";
 mes "กรุณาเลือกสิ่งที่ท่านต้องการ";
-mes "ค่าบริการครั้งละ ^FF0000500,000^000000 Zeny";
-mes "และ ^FF0000Illusion Stone^000000 5 ea.";
+mes "ต้องใช้ ^FF0000Illusion Stone^000000 5 ea.";
 mes "ลบออฟครั้งละ ^FF000050^000000 Cash";
 
 
@@ -578,11 +577,11 @@ end;
 					mes "อยากออฟให้มาหาข้าน่ะ.";
 					end;
 OnInit:	
-	.cost = 500000; // ค่าออฟ zeny
+	.cost = 0; // ค่าออฟ zeny
 	.item1 = 25271;	//5
 	.item2 = 25669;	//30
 	
-	waitingroom "[•] ENC illusion",0; 
+	waitingroom "[ออฟ] illusion",0; 
 	
 end;
 
