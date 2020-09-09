@@ -29,7 +29,7 @@ OnInit:
 	end;
 //==============================================
 // กำหนดเวลาเริ่ม x1.2
-OnClock0616:
+OnClock0949:
 
 	setbattleflag("base_exp_rate", .base_exp*3/2 );
 	setbattleflag("job_exp_rate", .job_exp*3/2 );
