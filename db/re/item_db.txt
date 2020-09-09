@@ -14169,6 +14169,27 @@
 // Illusion of Underwater BY novaragnarok
 //===================================================================
 
+25892,Deep_Sea_Shells,Deep Sea Shells,3,20,,10,0,0,0,0,0xFFFFFFFF,63,2,,0,,,,{},{},{}
+25893,Deep_Sea_Fish_Tail,Deep Sea Fish Tail,3,20,,10,0,0,0,0,0xFFFFFFFF,63,2,,0,,,,{},{},{}
+25894,Corrupt_Deep_Sea_Fish,Corrupt Deep Sea Fish,3,20,,10,0,0,0,0,0xFFFFFFFF,63,2,,0,,,,{},{},{}
+25895,Deep_Sea_Starfish,Deep Sea Starfish,3,20,,10,0,0,0,0,0xFFFFFFFF,63,2,,0,,,,{},{},{}
+25896,Deep_Sea_Crab ,Deep Sea Crab,3,20,,10,0,0,0,0,0xFFFFFFFF,63,2,,0,,,,{},{},{}
+25899,Deep Sea_Essence,Deep Sea Essence,3,20,,10,0,0,0,0,0xFFFFFFFF,63,2,,0,,,,{},{},{}
+
+300140,Deep_Sea_Sropho_Card,Deep Sea Sropho Card,6,20,,1,0,0,0,0,0xFFFFFFFF,63,2,2,,0,,,{ .@r = getrefine(); bonus2 bMagicAtkEle,Ele_Wind,(.@r>=11)?10:(.@r>=9)?5:3; },{},{}
+300141,Deep_Sea_Obeaune_Card,Deep Sea Obeaune Card,6,20,,1,0,0,0,0,0xFFFFFFFF,63,2,136,,0,,,{ bonus bMatk,30; },{},{}
+300142,Deep_Sea_Deviace_Card,Deep Sea Deviace Card,6,20,,1,0,0,0,0,0xFFFFFFFF,63,2,2,,0,,,{ .@r = getrefine(); bonus2 bAddEle,Ele_Water,(.@r>=9)?15:(.@r>=7)?10:5; bonus2 bAddRace,RC_Fish,(.@r>=9)?15:(.@r>=7)?10:5; },{},{}
+300143,Deep_Sea_Marse_Card,Deep Sea Marse Card,6,20,,1,0,0,0,0,0xFFFFFFFF,63,2,32,,0,,,{ bonus2 bSubEle,Ele_Earth,15; bonus2 bSubRace,RC_Fish,15; },{},{}
+300144,Deep_Sea_Merman_Card,Deep Sea Merman Card,6,20,,1,0,0,0,0,0xFFFFFFFF,63,2,64,,0,,,{ bonus bBaseAtk,4*readparam(bStr)/15; },{},{}
+300145,Deep_Sea_Witch_Card,Deep Sea Witch Card,6,20,,1,0,0,0,0,0xFFFFFFFF,63,2,4,,0,,,{ bonus2 bMagicAtkEle,Ele_Fire,100; bonus2 bMagicAtkEle,Ele_Dark,100; bonus2 bSubEle,Ele_All,-30; },{},{}
+300146,Deep_Sea_Sedora_Card,Deep Sea Sedora Card,6,20,,1,0,0,0,0,0xFFFFFFFF,63,2,64,,0,,,{ bonus2 bCriticalAddRace,RC_Fish,30; },{},{}
+300147,Deep_Sea_Swordfish_Card ,Deep Sea Swordfish Card,6,20,,1,0,0,0,0,0xFFFFFFFF,63,2,769,,0,,,{ bonus2 bSubEle,Ele_Water,10; if(getrefine()>=9) { bonus2 bMagicAddEle,Ele_Water,10; } },{},{}
+300148,Deep_Sea_Strouf_Card,Deep Sea Strouf Card,6,20,,1,0,0,0,0,0xFFFFFFFF,63,2,16,,0,,,{ bonus bMaxHPrate,10; bonus bMaxSPrate,5; if(getrefine()>=9) { bonus2 bMagicAddEle,Ele_Water,5; bonus2 bAddEle,Ele_Water,5; } },{},{}
+300149,Deep_Sea_Phen_Card,Deep Sea Phen Card,6,20,,1,0,0,0,0,0xFFFFFFFF,63,2,4,,0,,,{ .@r = getrefine(); bonus2 bSubEle,Ele_Neutral,15; bonus2 bMagicAtkEle,Ele_Wind,3*.@r; },{},{}
+300150,Deep_Sea_King_Dramoh_Card ,Deep Sea King Dramoh Card ,6,20,,1,0,0,0,0,0xFFFFFFFF,63,2,769,,0,,,{ bonus bMaxHPrate,-5; bonus2 bAddClass,Class_All,getrefine()/3; },{},{}
+300151,Deep_Sea_Kraken_Card,Deep Sea Kraken Card,6,20,,1,0,0,0,0,0xFFFFFFFF,63,2,2,,0,,,{ bonus bLongAtkRate,25; bonus bPerfectHitAddRate,5; },{},{}
+
+
 400053,Illusion_Morrigane's_Helm_ ,Illusion Morrigane's Helm,4,30000,,500,,15,0,1,0xFFFFFFFF,63,2,256,,130,1,294,{ .@r = getrefine(); bonus bStr,5; bonus bCritical,5; if (.@r>=7) { bonus bBaseAtk,50; } if (.@r>=9) { bonus bAspdRate,10; } },{},{}
 450144,Illusion_Saint_Robe_,Illusion Saint's Robe,4,20,,600,0,60,0,1,0x00048530,63,2,16,,120,1,,{ .@r = getrefine(); bonus bMaxHPrate,10; bonus bMaxSPrate,10; bonus bMdef,10; if (.@r>=9) { bonus2 bSubRace,RC_Fish,15; } if (.@r>=11) { bonus2 bIgnoreDefRaceRate,RC_Fish,20; } },{},{}
 450145,Illusion_Saphien_Armor_of_Ocean,Illusion Saphien's Armor of Ocean,4,20,,2200,,50,0,1,0xFFFFFFFF,63,2,16,,120,1,,{ .@r = getrefine(); bonus bMaxHPrate,10; bonus bMaxHP,125*.@r; bonus bDefEle,Ele_Water; if (.@r>=7) { bonus bDef,50; } if (.@r>=9) { autobonus "{ bonus2 bSubEle,Ele_Water,15; }",10,5000,BF_WEAPON,"{ specialeffect2 EF_POTION_BERSERK; }"; } },{},{}
