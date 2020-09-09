@@ -9,11 +9,11 @@ next;
 set .GiveItem,25814;
 // Item Requirements + Amounts
 setarray .Item[0],
-  25809,10,
-  25810,10,
-  25811,10,
-  25812,10,
-  25813,10;
+  25809,1,
+  25810,1,
+  25811,1,
+  25812,1,
+  25813,1;
 
 for( set .@i,0; .@i < getarraysize( .Item ) - 1; set .@i,.@i + 2 )
 if( countitem( .Item[.@i] ) < .Item[.@i + 1] ){
