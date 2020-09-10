@@ -28,8 +28,8 @@ OnInit:
   set .item_rate_treasure, getbattleflag("item_rate_treasure");
 	end;
 //==============================================
-// กำหนดเวลาเริ่ม x1.2
-OnClock0949:
+// กำหนดเวลาเริ่ม x1.5
+OnClock0601:
 
 	setbattleflag("base_exp_rate", .base_exp*3/2 );
 	setbattleflag("job_exp_rate", .job_exp*3/2 );
@@ -48,7 +48,7 @@ OnClock0949:
 	end;
 //==============================================
 // กำหนดเวลาเริ่ม x2
-OnClock1836:
+OnClock1800:
 
 	setbattleflag("base_exp_rate", .base_exp*2 );
 	setbattleflag("job_exp_rate", .job_exp*2 );

@@ -1,0 +1,19 @@
+
+
+// Mob Spanw
+iz_d04_i,0,0,0,0	monster	Deep Sea Sropho	20801,15,5000
+iz_d04_i,0,0,0,0	monster	Deep Sea Obeaune	20802,15,5000
+iz_d04_i,0,0,0,0	monster	Deep Sea Deviace	20803,15,5000
+iz_d04_i,0,0,0,0	monster	Deep Sea Marse	20804,15,9000
+iz_d04_i,0,0,0,0	monster	Deep Sea Merman	20805,15,5000
+iz_d04_i,0,0,0,0	boss_monster	Deep Sea Kraken	20811,1,7200000,600000,0
+
+
+iz_d04_i,0,0,0,0	monster	Deep Sea Sedora	20806,15,5000
+iz_d04_i,0,0,0,0	monster	Deep Sea Swordfish	20807,15,5000
+iz_d04_i,0,0,0,0	monster	Deep Deep Sea Strouf	20808,15,5000
+iz_d04_i,0,0,0,0	monster	Deep Deep Sea Phen	20809,15,9000
+iz_d04_i,0,0,0,0	monster	Deep Sea King Dramoh	20810,15,5000
+iz_d04_i,0,0,0,0	boss_monster	Deep Sea Witch	20843,1,7200000,600000,0
+
+

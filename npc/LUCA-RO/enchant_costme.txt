@@ -250,7 +250,7 @@ case 3:
 	
 OnInit:	
 	
-	.cost = 2000000; // ค่าออฟ zeny
+	.cost = 500000; // ค่าออฟ zeny
 	.rate = 100; // โอกาสออฟติด
 	waitingroom "[ออฟ] Costume",0;
 	end;

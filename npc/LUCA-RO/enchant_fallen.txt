@@ -10,7 +10,7 @@
 //= Fully working.
 //= 1.0 First release
 //============================================================
-prontera,181,258,4	script	Fallen Warrior#fallen	10029,{
+lhz_dun_n,151,263,4	script	Fallen Warrior#fallen	735,{
     disable_items;
 	.@fallen_type = 0;
     if (checkweight(20748,1) == 0) {

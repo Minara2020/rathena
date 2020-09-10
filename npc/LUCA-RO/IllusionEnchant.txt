@@ -1,7 +1,7 @@
 //	== Illusion Enchants ==
 //	  == ikarngraphic ==
 
-prontera,180,253,5	script	Illusion Enchanter#cus	10314,{
+prontera,89,115,5	script	Illusion Enchanter#cus	677,{
 
 	disable_items;
 
