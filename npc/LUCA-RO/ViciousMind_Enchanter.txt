@@ -28,7 +28,7 @@ prt_q,236,64,4	script	เสริมพลัง Vicious Mind	101,{
 mes .n$;
 mes "สวัสดีท่าน, "+strcharinfo(0)+"!";
 mes "มีอะไรให้ข้าช่วยมั้ย ?";
-if(select("- เสริมพลังอุปกรณ์ Vicious Mind:- ไม่มีอะไร") - 1) close;
+if(select("- เสริมพลังอุปกรณ์ Vicious Mind:- ไม่มีอะไร:- ลบออฟ") - 1) close;
 next;
 mes .n$;
 mes "ก่อนที่เราจะเริ่มการเสริมพลัง ข้าขอแนะนำให้ท่านควรจะสวมอุปกรณ์ที่ต้องการเสียก่อน";
@@ -310,4 +310,73 @@ setarray .RandOpt3_M_MaxV[0],10,10,10,10,10,10,50,20,20,10;
 setarray .RandOpt3_R_MinV[0],1,1,1,1,1,1,1,1,1,1,1;
 setarray .RandOpt3_R_MaxV[0],10,10,10,10,10,10,50,20,20,5,20;
 end;
+
+
+//====================================
+	MN2:
+//====================================
+mes .n$;
+mes "ต้องสวมใส่ก่อนทุกครั้งที่จะออฟ.";
+mes "ต้องใช้ ^FF000050 Cash^000000 ในการลบ";
+mes "เลือกไอเท็มที่จะลบออฟ";
+
+	setarray .@indices[1], EQI_HAND_R;
+		for( set .@i,1; .@i <= 1; set .@i,.@i+1 ) {
+				if( getequipisequiped(.@indices[.@i]) )
+	set .@menu$, .@menu$ + F_getpositionname(.@indices[.@i]) + "-[" + getequipname(.@indices[.@i]) + "]";
+	set .@menu$, .@menu$ + ":";
+			}
+	set .@id, .@indices[ select(.@menu$) ];
+	set .@part, getequipid(.@id);
+
+				// anti-hack
+				if (callfunc("F_IsEquipIDHack", .@id, .@part))
+					end;
+
+				if (#CASHPOINTS < 10){ //money check
+					mes .name$;
+					mes "เจ้ามี ^FF0000Cash^000000 ไม่พอ.";
+					end;
+				}
+
+				if (countitem(.@part) > 1 ) {
+	next;
+					mes .name$;
+					mes "ข้าออฟได้ทีละอันเท่านั้น.";
+					mes "เอาไปเก็บในคลังก่อนแล้วค่อยมาใหม่.";
+					end;
+				}
+	next;
+					mes .name$;
+					mes "เจ้าได้เลือกที่จะลบออฟ ^000099" + getequipname(.@id) + "^000000";
+					next;
+				if (select( "^000099เอาเลย ลบเลย^000000.", "ยังก่อน." ) == 2) {
+					next;
+					mes .name$;
+					mes "ข้าเชื่อในการตัดสินใจของเจ้า.";
+					mes "อยากออฟให้มาหาข้าน่ะ.";
+					end;
+				}	
+
+	progressbar "0x007000", 1;
+	
+
+	set #CASHPOINTS, #CASHPOINTS - 50;
+	
+	set @card1,0;	set @card2,0;	set @card3,0;	set @card4,0;
+	
+	@card1 = getequipcardid(.@id,0);
+	@card2 = getequipcardid(.@id,1);
+	@card3 = getequipcardid(.@id,2);
+	@card4 = getequipcardid(.@id,3);
+	.@ref = getequiprefinerycnt(.@id);
+
+	delitem2 .@part, 1, 1, .@ref, 0, @card1, @card2, @card3, @card4;
+	getitem2 .@part, 1, 1, .@ref, 0, @card1, @card2, @card3, @card4;
+	equip .@part;
+
+	mes .name$;
+	mes "การลบไอเท็มเสร็จสมบรูณ์";
+end;
+
 }

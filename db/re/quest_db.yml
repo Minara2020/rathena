@@ -5270,6 +5270,9 @@ Body:
   - Id: 9418
     Title: Attack Sky Fortress Invading Prontera
     TimeLimit: +1h
+  - Id: 9419
+    Title: Attack Sky Fortress Invading Prontera
+    TimeLimit: +1h
   - Id: 9457
     Title: Solved Anyway
   - Id: 9458

@@ -153,11 +153,6 @@ prt_q,249,79,4	script	Scientist Doyeon#a1	4_M_MAYOR,{
 		mes "Prontera.";
 		completequest 9418;// Attack Sky Fortress Invading Prontera
 		setquest 9419;// Attack Sky Fortress Invading Prontera
-		if (isbegin_quest(9427) == 0) {
-			setquest 9427;// Clearing the Sky Fortress for the Same Time
-			completequest 9427;
-			rentitem 14505,3600;// Sky Fortress Ticket
-		}
 		close;
 	case 0:
 	case 1:

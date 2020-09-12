@@ -12269,6 +12269,7 @@
 25454,WarlockStone_Middle,High Wizard Stone (Middle),3,20,,100,,,,,,,,,,,,,{},{},{}
 25455,WarlockStone_Lower,High Wizard Stone (Lower),3,20,,100,,,,,,,,,,,,,{},{},{}
 25456,WarlockStone_Robe,Warlock Stone (Garment),3,20,,100,,,,,,,,,,,,,{},{},{}
+25273,Mysterious_Medal,Mysterious Medal,3,0,,0,,,,,,,,,,,,,{},{},{}
 //
 25464,World_Moving_Rights,World Moving Rights,3,20,,0,,,,,,,,,,,,,{},{},{}
 //
@@ -13885,6 +13886,7 @@
 // New Warlock Spell Books
 //===================================================================
 55048,Ancient_Hero's_Bravery,Ancient Hero's Bravery,,20,,1,,,,,0x03EFDFFF,63,2,,,1,,,{},{},{}
+55049,Ancient_Hero's_Wisdom,Ancient Hero's Wisdom,,20,,1,,,,,0x03EFDFFF,63,2,,,1,,,{},{},{}
 100065,WL_MB_SG,Spell Book (Storm Gust),11,0,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "WL_READING_SB_READING",1; },{},{}
 100066,WL_MB_LOV,Spell Book (Lord of Vermilion),11,0,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "WL_READING_SB_READING",2; },{},{}
 100067,WL_MB_MS,Spell Book (Meteor Storm),11,0,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ itemskill "WL_READING_SB_READING",3; },{},{}
