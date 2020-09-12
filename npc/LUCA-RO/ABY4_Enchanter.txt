@@ -25,10 +25,8 @@
 //============================================================
 
 
-abyss_02,265,266,6	script	นักล่ามังกร	459,{
+abyss_02,265,266,6	script	Abyss Enchanter	459,{
 	
-	set .n$,"[ Abyss Enchanter ]";
-
 mes .n$;
 mes "สวัสดีท่าน, "+strcharinfo(0)+"!";
 mes "มีอะไรให้ข้าช่วยมั้ย ?";
@@ -341,6 +339,7 @@ end;
 
 
 OnInit:
+set .n$,"[ Abyss Enchanter ]";
 // ========= Random Option Armor Set ========= 
 setarray .RandOpt1_A1[0],RDMOPT_VAR_MAXHPAMOUNT,
 					    RDMOPT_VAR_MAXSPAMOUNT,

@@ -18,15 +18,15 @@ Contact Us. Dollaporn Naraphan [ FB ]
 prontera,146,150,4	script	ปริศนาฟ้าแลบ::Quiz Girl	719,{
 
 	set @npcname$,"[^FF0000 ปริศนาฟ้าแลบ ^000000]"; // ตั้งชื่อ npc
-	set $quizitem,41000; // ของรางวัล Quiz Game
-	set $quizitemcount,5; // จำนวนที่จะได้รับ
+	set $quizitem,41001; // ของรางวัล Quiz Game
+	set $quizitemcount,1; // จำนวนที่จะได้รับ
 
 	if($@M_QuizEv==0) {
 		mes @npcname$;
 		mes "มีเวลา 10 นาที ในการตอบคำถาม หลังจากคำถามมาแล้ว";
 		mes "^FF6600พบกับ กิจกรรม ได้ทุกๆ 20 นาที^000000";
 		mes "------------------------------------------";
-		mes "• ของราวัล 5 Cash Coin 5 อัน";
+		mes "• ของราวัล 100 Cash Coin 1 อัน";
 		mes "------------------------------------------";
 		close;
 	}

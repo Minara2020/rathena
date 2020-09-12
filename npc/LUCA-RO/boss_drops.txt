@@ -1,8 +1,8 @@
 -	script	DropSystem	-1,{
 OnNPCKillEvent:
 	if( getmonsterinfo(killedrid, MOB_MVPEXP) > 0 && rand(100) >= 99)
-	getitem 41002,1;
+	getitem 41001,1;
+	//announce "ผู้เล่น " + strcharinfo(0) + " ได้ฆ่า Boss สำเร็จ ได้รับ Cash Coin 100 จำนวน 1 อัน",0,0xFFF200;
 	if( getmonsterinfo(killedrid, MOB_MVPEXP))
-	//announce "ผู้เล่น " + strcharinfo(0) + " ได้ฆ่า Boss สำเร็จ ได้รับ Cash Coin 10 จำนวน 1 อัน",0,0xFFF200;
     end;
 }
