@@ -136,7 +136,7 @@ prontera,144,226,3	script	ออฟ Limited Ring	992,{
 		close;
 	case 2:
 		mes "[Byrnes]";
-		mes "การลบออฟออกจาก Limited Ring, ข้าต้องการ 50 Cash Coin.";
+		mes "การลบออฟออกจาก Limited Ring, ข้าต้องการ  (Cash Coin 10) 5 อัน ในการลบ";
 		next;
 		if (countitem(41003) < 50) {
 			mes "[Byrnes]";
@@ -161,7 +161,7 @@ prontera,144,226,3	script	ออฟ Limited Ring	992,{
 			close;
 		}
 		// custom at this point
-		if (countitem(41003) < 250) {
+		if (countitem(41003) < 5) {
 			mes "[Byrnes]";
 			mes "เจ้ามี Cash Coin ไม่พอ. ข้าไม่สามารถลบออฟออกจาก Limited Ring ได้.";
 			close;
@@ -185,7 +185,7 @@ prontera,144,226,3	script	ออฟ Limited Ring	992,{
 		specialeffect2 EF_ANGEL2;
 		mes "[Byrnes]";
 		mes "ทำการลบเรียบร้อย.";
-		delitem 41003,50;
+		delitem 41002,5;
 		delequip .@eqi_slot[.@s];
 		getitem 41029,1;
 		close;
