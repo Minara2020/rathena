@@ -27,8 +27,14 @@
 //  ADD YOUR NPC HERE
 //============================================================
 prontera,185,219,3	script	เควสหมวก	76,{ 
-
-	callfunc "qshop",1;
+	
+	mes "[ เควสหมวก ]";
+	mes "นี่คือรายการเควส Equip Item";	
+	mes "สามารถเลือกดูได้ตาม List เลยจ้า";
+	mes "^ff0000โปรดเชคน้ำหนักก่อน ทำการแลกเควส";
+	mes "GM จะไม่รับผิดชอบอะไรทั้งนั้น^000000";
+	callfunc "qshop",1,6;
+	end;
 
 OnInit:
 waitingroom "เควสหมวก",0;
@@ -36,12 +42,15 @@ end;
 	
 }
 	
-prontera,189,211,3	script	เควส Shadow Costume	852,{ 
-	mes "[เควส Shadow Costume]";
-	mes "^ff0000โปรดระวัง ควรฝากไอเทมที่ท่านใช้ ก่อนทำการคราฟของ เช่น หมวกแลปต่างๆ หากคราฟ Shadow costume แล้วใช้ไอเทมที่ท่านไม่ต้องการให้ใช้ขึ้นมา^000000";
-	mes "^00ff00GM จะไม่รับผิดชอบอะไรทั้งนั้น^000000";
-	close2;
-	callfunc "qshop",2,3,4,5; 
+prontera,189,211,3	script	เควส Shadow Costume	853,{ 
+
+	mes "[ เควส Shadow Costume ]";
+	mes "นี่คือรายการเควส Equip Item";	
+	mes "สามารถเลือกดูได้ตาม List เลยจ้า";
+	mes "^ff0000โปรดเชคน้ำหนักก่อน ทำการแลกเควส";
+	mes "GM จะไม่รับผิดชอบอะไรทั้งนั้น^000000";
+	callfunc "qshop",2,3,4,5;
+	end;
 	
 OnInit:
 waitingroom "เควส Shadow Costume",0;
@@ -55,7 +64,7 @@ end;
 
 // Script Core - DO NOT DUPLICATE THIS NPC !!!!!!!!!!!!!
 //============================================================
--	script	quest_shop	-1,{
+-	script	qshop	-1,{
 function Add; function Chk; function Slot;
 OnInit:
 	freeloop(1);
@@ -64,9 +73,9 @@ OnInit:
 //  Basic shop settings.
 // -----------------------------------------------------------
 
-	set .Announce,0;	// Announce quest completion? (1: yes / 0: no)
+	set .Announce,1;	// Announce quest completion? (1: yes / 0: no)
 	set .ShowSlot,1;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
-	set .ShowID,0;  	// Show item IDs? (1: yes / 0: no)
+	set .ShowID,1;  	// Show item IDs? (1: yes / 0: no)
 	set .ShowZeny,0;	// Show Zeny cost, if any? (1: yes / 0: no)
 	set .MaxStack,100;	// Max number of quest items purchased at one time.
 
@@ -696,7 +705,7 @@ function	script	qshop	{
 	deletearray @i[0],getarraysize(@i);
 	for(set .@i,0; .@i<getargcount(); set .@i,.@i+1)
 		set @i[.@i],getarg(.@i);
-	doevent "quest_shop::OnMenu";
+	doevent "qshop::OnMenu";
 	end;
 }
 

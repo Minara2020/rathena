@@ -63,7 +63,6 @@ prontera,179,221,4	script	Equip Quest	726,{
 	mes "สามารถเลือกดูได้ตาม List เลยจ้า";
 	mes "^ff0000โปรดเชคน้ำหนักก่อน ทำการแลกเควส";
 	mes "GM จะไม่รับผิดชอบอะไรทั้งนั้น^000000";
-	close2;
 	callfunc "qnhshop",1,2,3,4,5,6,7,8,9,10,11,12,13;
 	end;
 
@@ -99,7 +98,7 @@ prontera,179,221,4	script	Equip Quest	726,{
 
 // Script Core - DO NOT DUPLICATE THIS NPC !!!!!!!!!!!!!
 //============================================================
--	script	newhat_ma	-1,{
+-	script	qnhshop	-1,{
 function Add; function Chk; function Slot;
 OnInit:
 	freeloop(1);
@@ -910,7 +909,7 @@ function	script	qnhshop	{
 	deletearray @i[0],getarraysize(@i);
 	for(set .@i,0; .@i<getargcount(); set .@i,.@i+1)
 		set @i[.@i],getarg(.@i);
-	doevent "newhat_ma::OnMenu";
+	doevent "qnhshop::OnMenu";
 	end;
 }
 
